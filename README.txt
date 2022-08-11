@@ -1,1 +1,2 @@
-Carlos Nek Hernández Martínez 
+﻿Carlos Nek Hernández Martínez 
+Jorge Tello Alonso
