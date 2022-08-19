@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> 
+<!-- enlazar hoja de estilos -->
+    <link rel="stylesheet" href="assets/css/style.css">
+<!-- google fonts: Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Titillium+Web&display=swap" rel="stylesheet">
+<!-- Ionicons -->
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+    <script src="https://kit.fontawesome.com/0a3ae2fadb.js" crossorigin="anonymous"></script> <!-- Link para los iconos de redes sociales-->
+
+    <title>Página de Artista</title>
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container"> <!--Creamos un contenedor para centrar -->
+        <a class="navbar-brand" href="#"><img src="assets/img/logoAkanW.png" class="logo-akan" alt="logo">Akan "Un lugar para el Arte"</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <ion-icon name="menu-outline" class="navbar-toogler"></ion-icon> <!-- menu responsivo para movil -->
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav ml-auto">  <!-- mr a ml para q los links se vayan del lado derecho -->
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="Inicio">Inicio</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="Inspirate">Inspirate</a>
+            </li>           
+            <li class="nav-item">
+              <a class="nav-link" href="#" id="Galeria">Galeria</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#" id="Market" >Market</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#" id="Artistas">Artistas</a>
+              </li>
+          </ul>
+        </div>
+        </div>
+    </nav>
+    <!-- Barra de búsqueda -->
+    <nav class="navbar navbar-light bg-light">
+      <a class="navbar-brand" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAchJREFUSEuNls1RAzEMhT9VEEogFQAdpAOGCsg5ORA6oAPCIbkCHdABQwehAqACQgVmdr1ry7YEm0PGo8j6edJ7jqA+AoT+q7QKIdmbn7XrcM4+Qnem/y6CNp5GmNKUi+uChhRO7Kq9eNVlp+O+2iFw7MDDyctu2F0QlK8FUk6tIwxnjbWuGsIBuOja0BCpBAMUf3agR6cz9ucv4HQcbz3kLchNrijBmRfB6KZalluEbbd67Qxi5g9/zP8u3M9Q/bGHqAE5wnKAcObupsEVlfYZWI53iw4U5Bvgvt0unw4q5xz4HLnVJogxToDvSR2UG/UGLIoRNfPKhhfgchqFk9cV0N1LUuBKhcAywGMcVKZ+ebnQqPcA57W/4oEOlNo4AjOBeehwrWRriswUW5RVMwH7ROBa4CFAN/hCFzWTc5eW2PlAL0Be7c1vkoknyAZVi4x3ApsgzOp3wng4tAAkcpv1N0KW9qIJm18pQ1JbJmtRyVPcIawI7AXWCgrPrhZV1a+3oipGwxsFJr6tQTE2zaDm1hQu7ULfgewhrOOFPswOWAF7YLDrcJaaelLczMAjYFmv8yYblw1WeYtQ9uDskP6r0rgY2+L5/ALyscYg6RQ2YAAAAABJRU5ErkJggg=="/></a>
+      <form class="form-inline">
+        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+      </form>
+    </nav>
+    <!-- página del artista -->
+
+    <div class="container">
+      <div class="row text-center" style="padding-top: 80px";>
+          <div class="col-3" > <!-- Foto del artista -->
+
+              <div class="border-0 " style="width: auto">
+                  <img src="assets/img/1/fotoArtista.jpg" class="card-img rounded-circle" alt="fotoArtista">
+                  <div class="card-body">
+                    <h5 class="card-title">NOMBRE</h5>
+                    <p class="card-text">Fotógrafo</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Ciudad</li>
+                  </ul>
+                  <div class="card-body">
+                    <div class="caja"> <!-- Inician iconos -->
+                      <div class="icon facebook">  
+                        <a href="">                
+                          <span><i class="fa-brands fa-facebook"></i></span>
+                        </a>
+                      </div>
+                      <div class="icon instagram">
+                        <a href="">                        
+                          <span><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                      </div>
+                      <div class="icon tiktok">
+                        <a href="">                        
+                          <span><i class="fa-brands fa-tiktok"></i></span>
+                        </a>
+                      </div>
+                      <div class="icon twitter">       
+                        <a href="">                 
+                          <span><i class="fa-brands fa-twitter"></i></span>
+                        </a>
+                      </div>
+                    </div> <!-- terminan iconos -->                    
+                  </div>
+              </div>
+          </div>
+
+          <div class="col-9" >
+                <div class="row justify-content-center" style="padding-top:30px;">
+                  <h2>Info del artista</h2> 
+                </div>
+              
+              <div class="row justify-content-center" style="padding-top: 80px; padding-block-end: 80px; padding-left: 30px; padding-right: 30px; background-color: rgb(197, 200, 201); border-radius: 50px;">
+                  <p>
+                      Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorem rem aliquam maiores ipsa dignissimos eveniet. Officiis earum, tenetur quos omnis obcaecati possimus fuga tempore consequuntur odit inventore sunt alias enim?Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque, mollitia voluptatibus expedita quisquam eveniet deserunt fugit consequuntur minima minus numquam ducimus iusto dolores omnis facere neque, ullam sit quas nam! Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis voluptatem quae iste natus nobis. Delectus eveniet quis voluptatibus? Nostrum ut facere, eos error voluptates sint unde sunt dignissimos facilis dolores!
+                  </p>
+              </div>
+          </div>
+      </div>
+                <!-- EVENTOS -->
+      <div class="row text-center">
+        <div class="col-3" style="padding-top: 50px;"> 
+          <div class="">
+            <h2>Eventos</h2>
+          </div>
+          <div class="" style="padding-top: 30px; padding-block-end: 30px; padding-left: 30px; padding-right: 30px; background-color: rgb(197, 200, 201); border-radius: 10px;">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione unde ex consequatur distinctio facilis minima repellat nihil asperiores sed recusandae! Veniam architecto, molestiae nemo in ipsa voluptatibus placeat quaerat modi.</p>
+          </div>
+        </div>
+              <!-- OBRAS -->
+        <div class="col-9 " style="padding-top: 50px;">
+          <div class="" >
+            <h2>Top Obras</h2>
+          </div>
+          
+          <div class="row row-cols-1 row-cols-md-3" style="padding-top: 30px ;">
+            <div class="col mb-4">
+              <div class="card h-100">
+                <img src="/assets/img/1/foto1.png" class="card-img-top" alt="foto1">
+                <div class="card-body">
+                  <h5 class="card-title">Foto 1</h5>
+                  <p class="card-text">This is a longer card.</p>
+                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
+                    <a href="link del mercado">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Agregar al carrito
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card h-100">
+                <img src="/assets/img/1/foto2.jpg" class="card-img-top" alt="foto2">
+                <div class="card-body">
+                  <h5 class="card-title">Foto 2</h5>
+                  <p class="card-text">This is a short card.</p>
+                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
+                    <a href="link del mercado">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Agregar al carrito
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col mb-4">
+              <div class="card h-100">
+                <img src="/assets/img/1/foto3.jpg" class="card-img-top" alt="foto3">
+                <div class="card-body">
+                  <h5 class="card-title">Foto 4</h5>
+                  <p class="card-text">This is a longer.</p>
+                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
+                    <a href="link del mercado">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Agregar al carrito
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            
+          </div>
+
+
+
+        </div>
+      </div>
+
+
+    </div>
+ 
+
+    <!-- Footer -->
+    <footer class="footer text-white text-center mt-4" style="  background-color: #61D7BB;
+    display: block;">
+      <h5 class="m-0 p-3">Todos los derechos reservados</h5>
+    </footer>
+
+
+
+    <!-- Optional JavaScript; choose one of the two! -->
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+    <!-- Option 2: Separate Popper and Bootstrap JS -->
+    <!--
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
+    -->
+  </body>
+</html>
