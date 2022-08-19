@@ -25,10 +25,16 @@ font-family: 'Titillium Web', sans-serif;
     color: azure;
 }
 
-.img-portada{
-    background-image: url("/PROYECTO_AKAN/assets/img/portadaAkan.jpeg");
-    min-width: cover;
-    min-height: 500px;
+.card-img-top {
+    height: 300px;  
+    width: 427px;
+    object-fit: cover;
+    
+    }
+
+.img-fluid{  
+    width: 100%;
+    height: 550px;
 }
 
 .footer {
