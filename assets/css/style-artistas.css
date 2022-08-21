@@ -1,9 +1,13 @@
 body {
-    font-family: 'Roboto', sans-serif;
-    font-family: 'Titillium Web', sans-serif;
-    background-image: url(/assets/img/backgroud.svg);
-    
-}
+
+    font-family: 'Anek Telugu';
+
+    background-image: url(../img/fondo.png);
+
+    background-color:#f7f9f9
+
+
+    ;
 .navbar{
     background-color: rgb(32, 32, 32);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
