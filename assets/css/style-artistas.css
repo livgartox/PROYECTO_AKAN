@@ -1,9 +1,21 @@
 body {
+<<<<<<< HEAD
     font-family: 'Roboto', sans-serif;
     font-family: 'Titillium Web', sans-serif;
     background-image: url(/assets/img/fondo.png);
     
 }
+=======
+
+    font-family: 'Anek Telugu';
+
+    background-image: url(../img/fondo.png);
+
+    background-color:#f7f9f9
+
+
+    ;
+>>>>>>> 85ec5686b60df083c4cd176b330e3d027adcba25
 .navbar{
     background-color: rgb(32, 32, 32);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -27,6 +39,7 @@ body {
     min-height: 500px;
 }
 
+<<<<<<< HEAD
 /* footer  */
 .footer{
     background-color: black;
@@ -37,11 +50,15 @@ body {
     min-width: 110px;
     max-width: 115px;
 }
+=======
+
+>>>>>>> 85ec5686b60df083c4cd176b330e3d027adcba25
 /* -----------------Desde aqui es mio */
 
 .card-img-top{ /* tamaño imagen de las cartas */
     height: 200px;
     object-fit: cover;
+<<<<<<< HEAD
     transition: 2s;
 }
 .card-img-top:hover{ /* Efecto de las cartas */
@@ -49,11 +66,22 @@ body {
 }
 
 
+=======
+}
+.card:hover{ /* Efecto de las cartas */
+    scale: 120%;
+}
+
+>>>>>>> 85ec5686b60df083c4cd176b330e3d027adcba25
 /* Estilo botones redes sociales */
 .caja{
     display: inline-flex;
 }
 .caja .icon{
+<<<<<<< HEAD
+=======
+    margin: 0 5px;
+>>>>>>> 85ec5686b60df083c4cd176b330e3d027adcba25
     display: flex;
     align-items: center;
     justify-content: center;
