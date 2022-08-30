@@ -1,7 +1,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Titillium Web', sans-serif;
-    background-image: url(/artista/assets/img/backgroud.svg);
+    background-image: url(/assets/img/fondo.png);
     
 }
 .navbar{
@@ -27,23 +27,33 @@ body {
     min-height: 500px;
 }
 
+/* footer  */
+.footer{
+    background-color: black;
+   
+}
 
+.img-logo{
+    min-width: 110px;
+    max-width: 115px;
+}
 /* -----------------Desde aqui es mio */
 
 .card-img-top{ /* tamaño imagen de las cartas */
     height: 200px;
     object-fit: cover;
+    transition: 2s;
 }
-.card:hover{ /* Efecto de las cartas */
-    scale: 120%;
+.card-img-top:hover{ /* Efecto de las cartas */
+    scale: 110%;
 }
+
 
 /* Estilo botones redes sociales */
 .caja{
     display: inline-flex;
 }
 .caja .icon{
-    margin: 0 5px;
     display: flex;
     align-items: center;
     justify-content: center;
