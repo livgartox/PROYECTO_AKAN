@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* 
 Para el fondo*/
 body{
@@ -93,3 +94,23 @@ large: mayor a 992 se deben ver 3
 .titulos{
     font-family: "Aboreto";
 }
+=======
+.img-carousel{
+        height: calc(50vh - 76px);
+        object-fit: cover;
+}
+.card-img-top{
+    max-height: calc(50vh - 80px);
+    object-fit: cover;
+    border-bottom: 4px dotted red;
+    border-top: 4px dotted red;
+}
+.card-img-top-obras{
+    max-height: calc(50vh - 10px);
+    object-fit: cover;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border-bottom-left-radius: 40%;
+    border-bottom-right-radius: 40%;
+}
+>>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187

@@ -1,0 +1,76 @@
+/* NAVBAR */
+
+.navbar{
+    background-color: rgb(32, 32, 32);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    min-height: 30px;
+}
+
+.nav-link{ color: azure;}
+.nav-link:hover {color:rgb(241, 153, 117)}
+
+.logo-akan{
+    min-width: 70px;
+    max-width: 70px;
+}
+
+.navbar-brand{color: azure;}
+.navbar-brand:hover{color:rgb(224, 104, 160)}
+
+.navbar-toogler{ 
+    font-size: 35px;
+    color: azure;
+}
+
+
+/* BODY */
+
+#cabecera1{
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+.quienesSomosEncabezado{
+    text-align: center;
+    margin: 50px;
+
+}
+
+.cartas{
+    margin: 50px;
+    text-align: center;
+    background-color: rgb(73, 70, 70);
+    color: white;
+    
+}
+
+.card1{
+    background-color:rgb(73, 70, 70);
+    margin: 10px;
+    
+}
+
+.card2{
+    background-color:rgb(73, 70, 70);
+    margin: 10px;
+
+}
+
+#cabecera2{
+    background-size: cover;
+    width: 100%;
+    height: auto;
+}
+
+/* FOOTER */
+
+.footer{
+    background-color: black;
+   
+}
+
+.img-logo{
+    min-width: 110px;
+    max-width: 115px;
+}
