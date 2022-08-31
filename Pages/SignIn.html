@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 
 <head>
   <!-- Required meta tags -->
@@ -11,7 +11,7 @@
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <!-- enlazar hoja de estilos -->
   <link rel="stylesheet" href="../assets/css/style-generales.css">
-  <link rel="stylesheet" href="../assets/css/style-LogIn.css">
+  <link rel="stylesheet" href="../assets/css/style-SignIn.css">
   <!-- google fonts: Roboto-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -21,7 +21,7 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <link rel="icon" type="image/jpg" href="../assets/img/faviconAkan.png"/>
-  <title>Log In | Akan</title>
+  <title>Sign In | Akan</title>
 </head>
 
 <body>
@@ -47,7 +47,7 @@
           <ul class="navbar-nav ml-auto">
             <!-- mr a ml para q los links se vayan del lado derecho -->
             <li class="nav-item">
-              <a class="nav-link" href="index.html" id="Inicio">Inicio</a>
+              <a class="nav-link" href="../index.html" id="Inicio">Inicio</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="inspirate.html" id="Inspirate">Inspirate</a>
@@ -56,101 +56,70 @@
               <a class="nav-link" href="galeria.html" id="Galeria">Galeria</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#" id="Artistas">Artistas</a>
+              <a class="nav-link" href="paginaArtista.html" id="Artistas">Artistas</a>
             </li>
           </ul>
         </div>
       </div>
     </nav>
   </div>
+ <br>
+<br>
+<br>
+<br>
+
+
 
   <br>
-  <br>
-
-
-
-  <br>
-  <main role="main" class="container">
-    <div class="row mt-5">
-      <img id="logo" src="../assets/img/logo-akan.jpeg" class="img-fluid mx-auto float-right" alt="...">
-      <div id="login" class="col-lg-4  col-md-6 offset-md-1
+  <main in role="main" class="container">
+    <div class="row">
+      <img id="logo" src="../assets/img/logo-akan.jpeg" class="img-fluid max-auto float-right" alt="...">
+      <div id="signin" class="col-lg-4  col-md-6 offset-md-1
                     col-12">
-     
-        <h2 class="text-center">Iniciar Sesión</h2><br>
 
-        <img id="img" class="img-fluid mx-auto d-block rounded-circle" src="../assets/img/usuario.png">
+                    <h2 class="text-center">Registrate</h2><br>
+                    
         <!--  Formulario de registro -->
         <form>
           <div class="form-group">
-            <label for="correo">Correo</label>
+            <label for="name">Nombre</label>
+            <input id="name" name="name" class="form-control" type="text" placeholder="Nombre">
+          </div>
+          <br>
+          <label for="correo">Correo</label>
+          <div class="form-group">
             <input id="correo" name="correo" class="form-control" type="email" placeholder="Correo electrónico">
           </div>
           <br>
           <div class="form-group">
             <label for="palabraSecreta">Contraseña</label>
-            <input id="palabraSecreta" name="palabraSecreta" class="form-control" type="password"
+            <input id="palabraSecreta1" name="palabraSecreta" class="form-control" type="password"
               placeholder="Contraseña">
-          </div><br>
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="palabraSecreta">Confirmar Contraseña</label>
+            <input id="palabraSecreta2" name="palabraSecreta" class="form-control" type="password"
+              placeholder="Confirmar Contraseña">
+          </div>
+          <br>
+          <div class="form-group">
+            <label for="palabraSecreta">Fecha de Nacimiento</label>
+            <input id="fecha" name="fecha" class="form-control" required="required" type="datetime-local"
+              placeholder="Fecha de Nacimiento">
+          </div>
+          <br>
           <button type="submit" class="btn btn-outline-primary mb-2">
-            Entrar
+            Crear Cuenta
           </button>
-          <p><a href="SignIn.html" class="message text-secondary">Crea una cuenta</a></p>
+          <br>
 
-          <!-- Button trigger modal -->
-          <button id="contraseña" type="submit" class="btn btn-outline-white mb-2" data-toggle="modal"
-            data-target="#staticBackdrop">
-            Contraseña Olvidada
-          </button>
 
-          <!-- Modal -->
-          <div class="container">
-            <div class="row"></div>
-            <div class="modal fade" id="staticBackdrop" data-backdrop="static" data-keyboard="false" tabindex="-1"
-              aria-labelledby="staticBackdropLabel" aria-hidden="true">
-              <div class="modal-dialog">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="staticBackdropLabel"></h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <form>
-                    <div class="modal-body ">
-
-                      <h3 class="text-center">Escribe tu correo</h3><br>
-                      <div class="modal-body">
-                        <label for="correo">Correo</label><br>
-                        <input type="email" name="email" id="email" required="required" class="form-control"
-                          placeholder="Correo Electronico">
-                      </div>
-                      <div class="modal-body">
-                        <label for="correo">Contraseña</label>
-                        <input type="password" name="password" class="form-control" placeholder="Contraseña">
-                      </div>
-                      <div class="modal-body">
-                        <label for="correo">Confirmar Contraseña</label>
-                        <input type="password" name="password" class="form-control" placeholder="Confirmar Contraseña">
-                      </div>
-                      <br>
-
-                    </div>
-                </div>
-              </div>
-              <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-dismiss="modal">Cerrar</button>
-                <button type="submit" class="btn btn-primary mb-2">Enviar contraseña</button>
-              </div>
         </form>
-
       </div>
-
-    </div>
-
-    </div>
-    </div>
     </div>
   </main>
+
 
   <!-- Footer -->
   <footer class="footer text-while py-4 text-center mt-4">
@@ -189,11 +158,9 @@
       </nav>
 
       <br>
-      <p id="f-text" class="text-white text-center">Copyright - All rights reserved ©2022. Akan Proyect </p>
+      <p id="f-text" class="text-white text-center mt-6">Copyright - All rights reserved ©2022. Akan Proyect </p>
     </div>
   </footer>
-
-
 
   <!-- Optional JavaScript; choose one of the two! -->
 

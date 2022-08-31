@@ -7,9 +7,6 @@
 body {
     font-family: 'Aboreto', cursive;
 font-family: 'Titillium Web', sans-serif;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
   background-image: url(../img/inspirate/fondo.png);
   background-color: #dadada;
 }
@@ -19,17 +16,6 @@ font-family: 'Titillium Web', sans-serif;
 #Inspirate-001{
 text-align: center;
 margin-top: 500px;
-=======
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
-  background-image: url(../assets/img/Group\ 166-1.svg);
-}
-
-#Inspirate-001{
-text-align: center;
-<<<<<<< HEAD
-=======
->>>>>>> Edu
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
 
 }
 
@@ -93,9 +79,6 @@ scale: (1.4);
 
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 .bloq-card{
 
     margin-left: 100px;
@@ -117,37 +100,14 @@ display: block;
 
     text-align: center;
 }
-=======
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
-.card-1{
-
-width: 400px;
-height: 700px;
-
-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-border-radius: 34px 41px 205.5px 205.5px;
-display: block;
-}
-
-
-<<<<<<< HEAD
-=======
->>>>>>> Edu
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
 
 
 
 .card-body{
     padding: 0px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     margin-bottom: 100px;
     text-align: left;
  
-=======
->>>>>>> Edu
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
 }
 
 
@@ -156,16 +116,8 @@ display: block;
     position: absolute;
 width: 100px;
 height: 100px;
-<<<<<<< HEAD
-    
-=======
-<<<<<<< HEAD
 position: relative;
 left: 50px;
-=======
-    
->>>>>>> Edu
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
 }
 
 #icon-inspirate-01:hover{
@@ -175,13 +127,7 @@ left: 50px;
     border-radius: 50px;
     margin: 3px;
     transition:0.5s;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
    
-=======
->>>>>>> Edu
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
 }
 
 
@@ -190,29 +136,15 @@ left: 50px;
     position: absolute;
 width: 100px;
 height: 100px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 position: relative;
 left: 50px;
-=======
->>>>>>> Edu
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
     
 }
 
 #icon-inspirate-02:hover{
 
     color: black;
-<<<<<<< HEAD
-    background-color: rgb(244, 32, 67);
-=======
-<<<<<<< HEAD
     background-color: rgb(194, 95, 129);
-=======
-    background-color: rgb(244, 32, 67);
->>>>>>> Edu
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
     border-radius: 50px;
     margin: 3px;
     transition:0.5s;
@@ -224,37 +156,20 @@ left: 50px;
     position: absolute;
 width: 100px;
 height: 100px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 position: relative;
 left: 50px;
-=======
->>>>>>> Edu
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
     
 }
 
 #icon-inspirate-03:hover{
 
     color: black;
-<<<<<<< HEAD
-    background-color: rgb(68, 172, 224);
-=======
-<<<<<<< HEAD
     background-color: rgb(99, 157, 186);
-=======
-    background-color: rgb(68, 172, 224);
->>>>>>> Edu
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
     border-radius: 50px;
     margin: 3px;
     transition:0.5s;
 }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
 #icon-inspirate-04{
 
     position: absolute;
@@ -297,34 +212,12 @@ filter: drop-shadow;
     transform: scale(1.1);
     border-radius:0%;
  
-=======
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
-.imgen-insp{
-    width: 350px;
-    height: 600px;
-
-    border-radius: 55px 55px 350px 299.5px;
- 
-    object-fit: cover;
-    
-    /* object-fit: cover; */
-}
-.imgen-insp:hover{
-    transform: scale(1.05);
-    
-<<<<<<< HEAD
-=======
->>>>>>> Edu
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
     transition:0.2s;
     }
 
     .text-02{
 
         border: 3px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
         background-color: rgb(198, 198, 198);
         align-self: center;
         justify-content: center;
@@ -343,18 +236,6 @@ filter: drop-shadow;
         padding: 25px;   
         color: aliceblue;
     }
-=======
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
-        background-color: antiquewhite;
-        align-self: center;
-        justify-content: center;
-
-        
-    }
-<<<<<<< HEAD
-=======
->>>>>>> Edu
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
     .text-02:hover{
 
         color: black;
@@ -365,9 +246,6 @@ filter: drop-shadow;
         transition:0.2s;
        padding: 5px;
         color: aliceblue;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
         padding: 20px;
         
     }
@@ -381,9 +259,6 @@ filter: drop-shadow;
        padding: 5px;
         color: rgb(0, 0, 0);
         padding: 20px;
-=======
->>>>>>> Edu
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
         
     }
     
@@ -396,9 +271,6 @@ filter: drop-shadow;
       text-decoration: #000000;
     }
 
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     .recib-poesia:hover {
         transform:translate(1000px);
         transition-duration: 5s;
@@ -424,18 +296,6 @@ filter: drop-shadow;
     margin-top: 30px;
     display:inline-block;
 }
-=======
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
-
-  
-
-
-
-/* carrusel  */
-<<<<<<< HEAD
-=======
->>>>>>> Edu
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
 
 .carousel-item active {
 
@@ -452,20 +312,11 @@ margin-bottom: 0%;
     width: 500px;
     object-fit:contain;
     border-radius: 20px;
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
     margin-top: 20px;
-=======
->>>>>>> Edu
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
 
 }
 
 .footer {
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
  background-color: #000000;
 
 
@@ -475,17 +326,6 @@ margin-bottom: 0%;
     max-width: 115px;
 }
 
-=======
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
-    background-color: #000000;
-    display: block;
-}
-
-
-<<<<<<< HEAD
-=======
->>>>>>> Edu
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
 #form-satisf{
 background-color: #333333;
 border-radius: 30px;
