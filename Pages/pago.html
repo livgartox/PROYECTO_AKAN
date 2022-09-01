@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
+        integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
+    <!-- google fonts: Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Titillium+Web&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
+    <!-- CDN Font Awesone -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+    <!-- enlazar hoja de estilos -->
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="stylesheet" href="/assets/css/style-pago.css">
+
+
+
+    <title>Pago</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <!--Creamos un contenedor para centrar -->
+            <a class="navbar-brand" href="#"><img src="/assets/img/logoAkanW.png" class="logo-akan" alt="logo">Akan "Un
+                lugar para el Arte"</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <ion-icon name="menu-outline" class="navbar-toogler"></ion-icon> <!-- menu responsivo para movil -->
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto">
+                    <!-- mr a ml para q los links se vayan del lado derecho -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="Inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="Inspirate">Inspirate</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="Galeria">Galeria</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="Market">Market</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="Artistas">Artistas</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    
+    <!-- Buscador y carrito de Compras -->
+    <nav class="navbar navbar-light bg-light">
+        <form class="form-inline">
+            <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Buscar</button>
+        </form>
+
+        <form class="form-inline">
+            <button class="btn btn-outline-success my-2 my-sm-0" type="submit"><svg xmlns="http://www.w3.org/2000/svg"
+                    width="16" height="16" fill="currentColor" class="bi bi-cart4" viewBox="0 0 16 16">
+                    <path
+                        d="M0 2.5A.5.5 0 0 1 .5 2H2a.5.5 0 0 1 .485.379L2.89 4H14.5a.5.5 0 0 1 .485.621l-1.5 6A.5.5 0 0 1 13 11H4a.5.5 0 0 1-.485-.379L1.61 3H.5a.5.5 0 0 1-.5-.5zM3.14 5l.5 2H5V5H3.14zM6 5v2h2V5H6zm3 0v2h2V5H9zm3 0v2h1.36l.5-2H12zm1.11 3H12v2h.61l.5-2zM11 8H9v2h2V8zM8 8H6v2h2V8zM5 8H3.89l.5 2H5V8zm0 5a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0zm9-1a1 1 0 1 0 0 2 1 1 0 0 0 0-2zm-2 1a2 2 0 1 1 4 0 2 2 0 0 1-4 0z" />
+                </svg></button>
+        </form>
+    </nav>
+    <!-- Contenido pagina envio-pago-->
+    <main class="main">
+        <h1>PROCESO DE PAGO</h1>
+        <div class="container-fluid">
+            <div class="row pe-1">
+                <div class="col-12 col-sm-12 col-md-6 hi-1">
+                    <h2>Datos de envio</h2>
+                    <div class="container-fluid justify-content-center col-auto">
+                        <div class="accordion" id="accordionExample">
+                            <div class="card">
+                                <div class="card-header" id="headingOne">
+                                    <h2 class="mb-0">
+
+                                        <button class="btn btn-link btn-block text-left btn-collap" type="button"
+                                            data-toggle="collapse" data-target="#collapseOne" aria-expanded="false"
+                                            aria-controls="collapseOne">
+                                            Direccion
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseOne" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <form class="texto-formulario">
+                                            <label>Nombre(s)</label>
+                                            <br>
+                                            <input type="text" id="nombreEnvio" class="posicion form"
+                                                placeholder="Ejem. Oscar">
+                                            <br>
+                                            <label for="">Apellidos</label>
+                                            <br>
+                                            <input type="text" id="apellidoEnvio" class="posicion form"
+                                                placeholder="Ejem Avila Gonzalez">
+                                            <br>
+                                            <br>
+                                            <select name="Estado" id="estado" class="posicion form select-estado">
+                                                <option disabled="" selected=""> Estado</option>
+                                                <option value="1">Aguascalientes</option>
+                                                <option value="2">Baja California</option>
+                                                <option value="3">Baja California Sur</option>
+                                                <option value="4">Campeche</option>
+                                                <option value="5">Ciudad de México</option>
+                                                <option value="6">Chiapas</option>
+                                                <option value="7">Chihuahua</option>
+                                                <option value="8">Coahuila</option>
+                                                <option value="9">Colima</option>
+                                                <option value="10">Durango</option>
+                                                <option value="11">Guanajuato</option>
+                                                <option value="12">Guerrero</option>
+                                                <option value="13">Hidalgo</option>
+                                                <option value="14">Jalisco</option>
+                                                <option value="15">México</option>
+                                                <option value="16">Michoacán</option>
+                                                <option value="17">Morelos</option>
+                                                <option value="18">Nayarit</option>
+                                                <option value="19">Nuevo León</option>
+                                                <option value="20">Oaxaca</option>
+                                                <option value="21">Puebla</option>
+                                                <option value="22">Querétaro</option>
+                                                <option value="23">Quintana Roo</option>
+                                                <option value="24">San Luis Potosí</option>
+                                                <option value="25">Sinaloa</option>
+                                                <option value="26">Sonora</option>
+                                                <option value="27">Tabasco</option>
+                                                <option value="28">Tamaulipas</option>
+                                                <option value="29">Tlaxcala</option>
+                                                <option value="30">Veracruz</option>
+                                                <option value="31">Yucatán</option>
+                                                <option value="32">Zacatecas</option>
+                                            </select>
+                                            <br>
+                                            <br>
+                                            <div class="mt-3" id="grupoDireccion">
+                                                <label for="">Calle, N°. Exterior, N° Interior </label>
+                                                <br>
+                                                <input type="text" name="" id="" class="posicion form">
+                                                <br>
+                                                <label for="">Colonia</label>
+                                                <br>
+                                                <input type="text" name="" id="" class="posicion form">
+                                                <br>
+                                                <label for="">Municipio</label>
+                                                <br>
+                                                <input type="text" name="" id="" class="posicion form">
+                                                <br>
+                                                <label for="">Codigo Postal</label>
+                                                <br>
+                                                <input type="text" maxlength="5" style="width:40%" class="posicion form"
+                                                    id="codigoPostal">
+                                                <br>
+                                                <label for="">Telefono</label>
+                                                <br>
+                                                <input type="text" maxlength="10" style="width: 40%"
+                                                    class="posicion form" id="telefono">
+                                                <br>
+                                                <br>
+                                                <button type="button" class="btn-lg" id="btn-envio">Guardar
+                                                    Envío</button>
+                                                <br>
+                                            </div>
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingTwo">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseTwo" aria-expanded="false"
+                                            aria-controls="collapseTwo">
+                                            Tarjeta de Credito o Debito
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseTwo" class="collapse" aria-labelledby="headingOne"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        <form class="texto-formulario formulario " id="formulario">
+                                            <br>
+                                            <label for="inputNumero">Numero de tarjeta</label>
+                                            <br>
+                                            <input type="text" class="posicion form" class="form-control "
+                                                id="inputNumero" maxlength="19" autocomplete="off"
+                                                placeholder="xxxx-xxxx-xxxx-xxxx">
+                                            <br>
+                                            <label for="inputNombre">Nombre</label>
+                                            <br>
+                                            <input type="text" class="form-control posicion form" id="inputNombre"
+                                                placeholder="Nombre" autocomplete="off">
+                                            <br>
+                                            <select name="mes" id="selectMes" class="posicion form">
+                                                <option disabled selected>Mes</option>
+                                            </select>
+                                            <br>
+                                            <label for="selectYear"> </label>
+                                            <br>
+                                            <select name="year" id="selectYear" class="posicion form">
+                                                <option disabled selected>Año</option>
+                                            </select>
+                                            <br>
+                                            <label for="inputCCV">CCV</label>
+                                            <br>
+                                            <input type="text" id="inputCCV" maxlength="3"
+                                                class="form-control posicion form" style="width: 40%">
+                                            <br>
+                                            <button type="button" class="btn-lg" id="btn-envio">Guardar
+                                                Tarjeta</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="card">
+                                <div class="card-header" id="headingThree">
+                                    <h2 class="mb-0">
+                                        <button class="btn btn-link btn-block text-left collapsed" type="button"
+                                            data-toggle="collapse" data-target="#collapseThree" aria-expanded="false"
+                                            aria-controls="collapseThree">
+                                            Deposito en OXXO
+                                        </button>
+                                    </h2>
+                                </div>
+                                <div id="collapseThree" class="collapse" aria-labelledby="headingThree"
+                                    data-parent="#accordionExample">
+                                    <div class="card-body">
+                                        Favor de depositar a esta tarjeta xxxx-xxxx-xxxx-xxxx
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+
+
+
+                    </div>
+                </div>
+                <div class="col-12 col-sm-12 col-md-6 d-md-block hi-2">
+                    <h2>Revision de pedido</h2>
+                    <div class="container justify-content-center">
+                        <table class="tablaPago" style="width: 100%">
+                            <thead class="text-center">
+                                <tr>
+                                    <th id="prod-pago" style="width:20%">Producto</th>
+                                    <th id="desc-pago" style="width:35%">Descripción</th>
+                                    <th id="cant-pago" style="width:20%">Cantidad</th>
+                                    <th id="prec-pago" style="width:20%">Precio</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <th> 
+                                        <img src="" alt="Producto" style="width: 120px">
+                                    </th>
+                                    <th>
+                                        <p style="font-size:10px"> Descripcion de producto</p>
+                                    </th>
+                                    <th>    
+                                        <p style="font-size:14px"># Cantidad</p>
+                                    </th>
+                                    <th>
+                                        <span style="font-size: 12px">$9.00</span>
+                                    </th>
+
+                                </tr>
+                            </tbody>
+                            <tfoot>
+                                <tr>
+                                    <td></td>
+                                    <td></td>
+                                    <td>Total</td>
+                                    <td>$</td>
+                                </tr>
+                            </tfoot>
+                        </table>
+                        <div class="row justify-content-center"></div>
+                        <br><br>
+                        <button type="submit" style="width: 80%" class="btn-lg form-btn" >
+                            <span>Terminar Pedido</span>
+                        </button>
+
+                    </div>
+
+                </div>
+            </div>
+
+
+        </div>
+        </div>
+
+    </main>
+
+
+
+    <!-- Footer -->
+    <footer class="footer text-while py-4 text-center mt-4">
+        <div class="container">
+            <nav class="row">
+                <!-- Logo -->
+                <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">
+                    <img src="/assets/img/logoAkanW.png" alt="LogoAkan" class="img-logo mr-2">
+                    <p class="text-white row-cols-2">Un lugar para el Arte</p>
+                </a>
+
+                <!-- Menú -->
+                <ul class="col-3 list-unstyled text-white">
+                    <li class="font-weight-bold text-uppercase">Contacto Akan</li><br>
+                    <li><a href="" class="text-reset">(52) 55 81712- 312</a></li>
+                    <li><a href="" class="text-reset">comunidadAkan@org.mx</a></li>
+                    <li><a href="" class="text-reset">Miguel Hidalgo 42, CDMX</a></li>
+                </ul>
+                <!-- Menú 2 -->
+                <ul class="col-3 list-unstyled text-white">
+                    <li class="font-weight-bold text-uppercase">Métodos de Pago</li><br>
+                    <li><a href="" class="text-reset">Tarjetas de crédito y débito</a></li>
+                    <li><a href="" class="text-reset">Tarjetas de regalo</a></li>
+                    <li><a href="" class="text-reset">Paga en efectivo en OXXO</a></li>
+                </ul>
+                <!-- Redes Sociales -->
+                <ul class="col-3 list-unstyled text-white">
+                    <li class="font-weight-bold text-uppercase">Social Networks</li><br>
+                    <li class="d-flex justify-content-between"></li>
+                    <a href="" class="text-reset"><i class="fa-brands fa-facebook-f"> </i> </a>
+                    <a href="" class="text-reset"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="" class="text-reset"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="" class="text-reset"><i class="fa-brands fa-pinterest-p"></i></a>
+                </ul><br>
+
+            </nav>
+        </div>
+        <br>
+        <p class="text-white text-center mt-6">Copyright - All rights reserved ©2002. Akan Proyect </p>
+    </footer>
+
+
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="assets/js/pagos.js"></script>
+</body>
+
+</html>

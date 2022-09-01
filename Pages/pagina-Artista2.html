@@ -1,0 +1,364 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous"> 
+    <!-- enlazar hoja de estilos -->
+    <link rel="stylesheet" href="../assets/css/style-artistas.css">
+    
+    <!-- google fonts: Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Titillium+Web&display=swap" rel="stylesheet">
+    <!-- Ionicons -->
+    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+    <script src="https://kit.fontawesome.com/0a3ae2fadb.js" crossorigin="anonymous"></script> <!-- Link para los iconos de redes sociales-->
+
+    <title>Página de Artista</title> <!-- JESU FOTOGRAFO -->
+  </head>
+  <body>
+
+    <!-- Navbar -->
+    <div class="fixed-top">
+      <nav class="navbar navbar-expand-lg">
+          <div class="container"> <!--Creamos un contenedor para centrar -->
+          <a class="navbar-brand" href="#"><img src="../assets/img/logoAkanW.png" class="logo-akan" alt="logo">Akan "Un lugar para el Arte"</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <ion-icon name="menu-outline" class="navbar-toogler"></ion-icon> <!-- menu responsivo para movil -->
+          </button>
+        
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">  <!-- mr a ml para q los links se vayan del lado derecho -->
+              <li class="nav-item">
+                <a class="nav-link" href="../index.html" id="Inicio">Inicio</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="inspirate.html" id="Inspirate">Inspirate</a>
+              </li>           
+              <li class="nav-item">
+                <a class="nav-link" href="galeria.html" id="Galeria">Galeria</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="paginaArtista.html" id="Artistas">Artistas</a>
+              </li>
+            </ul>
+          </div>
+          </div>
+      </nav>
+      <!-- Barra de búsqueda -->
+      <nav class="navbar navbar-light bg-light">
+        <a class="navbar-brand" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAchJREFUSEuNls1RAzEMhT9VEEogFQAdpAOGCsg5ORA6oAPCIbkCHdABQwehAqACQgVmdr1ry7YEm0PGo8j6edJ7jqA+AoT+q7QKIdmbn7XrcM4+Qnem/y6CNp5GmNKUi+uChhRO7Kq9eNVlp+O+2iFw7MDDyctu2F0QlK8FUk6tIwxnjbWuGsIBuOja0BCpBAMUf3agR6cz9ucv4HQcbz3kLchNrijBmRfB6KZalluEbbd67Qxi5g9/zP8u3M9Q/bGHqAE5wnKAcObupsEVlfYZWI53iw4U5Bvgvt0unw4q5xz4HLnVJogxToDvSR2UG/UGLIoRNfPKhhfgchqFk9cV0N1LUuBKhcAywGMcVKZ+ebnQqPcA57W/4oEOlNo4AjOBeehwrWRriswUW5RVMwH7ROBa4CFAN/hCFzWTc5eW2PlAL0Be7c1vkoknyAZVi4x3ApsgzOp3wng4tAAkcpv1N0KW9qIJm18pQ1JbJmtRyVPcIawI7AXWCgrPrhZV1a+3oipGwxsFJr6tQTE2zaDm1hQu7ULfgewhrOOFPswOWAF7YLDrcJaaelLczMAjYFmv8yYblw1WeYtQ9uDskP6r0rgY2+L5/ALyscYg6RQ2YAAAAABJRU5ErkJggg=="/></a>
+        <form class="form-inline">
+          <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+          <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+        </form>
+      </nav>
+    </div>
+
+
+    <!-- página del artista -->
+
+    <div class="container" style="margin-top: 160px;">
+      <div class="row text-center" style="padding-top: 80px";>
+          <div class="col-xl-3 col-lg-3 col-md-4" > <!-- Foto del artista -->
+
+              <div class="border-0 " style="width: auto">
+                  <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.6435-9/160933297_127117946083517_643660648362794246_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=09cbfe&_nc_eui2=AeF94f4j6JZmvMTxnctp4dGy7ZzDNC52jT7tnMM0LnaNPl-a_7nuHWp8Bs68KVWUzZRivCKvlUfLBaAI0UOUEV0w&_nc_ohc=9zfBbTVSK74AX-rHsyI&tn=5lqtFxhlZLc7Wd5K&_nc_ht=scontent-qro1-1.xx&oh=00_AT9jpqAAMQVSd9nci8vcJOENuWDGfCQUJehMNc8M_Xff5w&oe=632E9DFC" class="card-img rounded-circle" style="width: 250px;"alt="fotoArtista">
+                  <div class="card-body">
+                    <h5 class="card-title">Jesu no Jesús</h5>
+                    <p class="card-text">Fotógrafo</p>
+                  </div>
+                  <ul class="list-group list-group-flush">
+                    <li class="list-group-item">Ciudad de México</li>
+                  </ul>
+                  <div class="card-body">
+                    <div class=" row caja"> <!-- Inician iconos -->
+                      <div class="col-lg-3 col-md-6 col-sm-3 col-3 icon facebook">  
+                        <a href="https://www.facebook.com/JesuNoJesus" target="_blank">                
+                          <span><i class="fa-brands fa-facebook"></i></span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-3 col-3 icon instagram">
+                        <a href="https://www.instagram.com/jesu_no_jesus/?igshid=YmMyMTA2M2Y%3D" target="_blank">                        
+                          <span><i class="fa-brands fa-instagram"></i></span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-3 col-3 icon tiktok">
+                        <a href="https://www.tiktok.com/@jesunojesus" target="_blank">                        
+                          <span><i class="fa-brands fa-tiktok"></i></span>
+                        </a>
+                      </div>
+                      <div class="col-lg-3 col-md-6 col-sm-3 col-3 icon twitter">       
+                        <a href="https://twitter.com/JesuNoJesus" target="_blank">                 
+                          <span><i class="fa-brands fa-twitter"></i></span>
+                        </a>
+                      </div>
+                    </div> <!-- terminan iconos -->                    
+                  </div>
+              </div>
+          </div>
+          <div class="col"></div>
+          <div class="col-xl-8 col-lg-8 col-md-7 col-sm-12" >
+            <div class="row justify-content-center" style="padding-top:30px;">
+              <h2>Sobre Jesu</h2> 
+            </div>
+            <div class="row justify-content-center" style="padding-top: 80px; padding-block-end: 80px; padding-left: 30px; padding-right: 30px; background-color: rgb(218, 223, 225); border-radius: 50px;">
+                <p>
+                  La fotografía es la mejor forma de guardar eternamente un momento. <br>
+                  En nuestro equipo sabemos la importancia de guardar esos momentos únicos con las mejores imágenes ya que será la mejor manera de dar un vistazo al pasado y por ende deicamos nuestros servicios a ofrece un trabajo de calidad, garantizando la remembranza de todos sus eventos con ua satisfacción al volverlos a mirar. 
+                </p>
+            </div>
+          </div>
+      </div>
+            
+      <!-- OBRAS -->
+      <div class="row text-center">
+        <div class="col" style="padding-top: 50px;">
+          <div class="" >
+            <h2>Obras</h2>
+          </div>
+          
+          <div class="row" style="padding-top: 30px ;">
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" style="margin-top: 20px;">
+              <div class="card h-100">
+                <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t39.30808-6/272883637_352626883532621_3604428969424845300_n.jpg?_nc_cat=107&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHMMa5-kxQjpHATLqgTssxQYKTJhK1gN3VgpMmErWA3dVbeI8-pH4PfSiI2PR7abAdTVitaxKMIrHy1zlIdUpPe&_nc_ohc=Nuf7jl_xvbEAX8kaoTV&_nc_ht=scontent-qro1-1.xx&oh=00_AT-TIs409zFoEVDC8dzLoMUJSCzvJWyZ5jB3_x4c_UwW1w&oe=630C41A6" class="card-img-top" alt="foto1">
+                <div class="card-body">
+                  <h5 class="card-title">Bodas</h5>
+                  <!-- <p class="card-text">This is a longer card.</p> -->
+                  <!-- <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
+                    <a href="link del mercado">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Agregar al carrito
+                    </a>
+                  </button> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" style="margin-top: 20px;">
+              <div class="card h-100">
+                <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t39.30808-6/280644861_421068870021755_4025333390852097052_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGAWvw4YOe7Zy-FxpS-S2YVFkHWe7b6EUUWQdZ7tvoRRcwvyJ8uTeZ7YVnojMKyuO29tnaMoD9H1tJD5RVYjHE2&_nc_ohc=RygCe-FMrY8AX-9Ag6f&tn=5lqtFxhlZLc7Wd5K&_nc_ht=scontent-qro1-1.xx&oh=00_AT_TwIxSWzWgLVQrqZQFAnhoNVhLdZ4xAJAI-qanAgzD5g&oe=630CDF70" class="card-img-top" alt="foto2">
+                <div class="card-body">
+                  <h5 class="card-title">Graduaciones</h5>
+                  <!-- <p class="card-text">This is a short card.</p> -->
+                  <!-- <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
+                    <a href="link del mercado">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Agregar al carrito
+                    </a>
+                  </button> -->
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" style="margin-top: 20px;">
+              <div class="card h-100">
+                <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t39.30808-6/300306305_493730022755639_2464761453204007859_n.jpg?_nc_cat=108&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeE4uWYTpqJKVmbbSvDSRdqn3Y9pwtF3Hkzdj2nC0XceTEmB5qKmyZ9vo2kboQKjtiGGoafsRbbf7zfJNcuCs_zK&_nc_ohc=9gcU7Nmm0pMAX8RTPO-&_nc_ht=scontent-qro1-1.xx&oh=00_AT-xuEKUk0wjdBmnc3_uM9aommFkZegInDMo_PNNf1ar1Q&oe=630D11AB" class="card-img-top" alt="foto3">
+                <div class="card-body">
+                  <h5 class="card-title">Quince Años</h5>
+                  <!-- <p class="card-text">This is a longer.</p>                  -->
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" style="margin-top: 20px;">
+              <div class="card h-100">
+                <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t39.30808-6/242796146_262931289168848_2703678761933135660_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeFfih2WmIN4RXLeT4krrowKMnxp6z3oKx4yfGnrPegrHvOJaKO65yVSKtQzb-yfLTHGr4cpVZ5DVWHHfYzmQgl5&_nc_ohc=oXaErTnijf8AX_w4tOJ&_nc_ht=scontent-qro1-1.xx&oh=00_AT-YEaDEGgUZfRpChwLwEbfg920ODQlQwIgXsIN_AYIVdQ&oe=630DC7E2" class="card-img-top" alt="foto3">
+                <div class="card-body">
+                  <h5 class="card-title">Eventos</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" style="margin-top: 20px;">
+              <div class="card h-100">
+                <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.6435-9/199508273_184346663693978_8779278112894751647_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeHl5AMOn0Gaiw7tJm403h6ZGY8-BGNn62sZjz4EY2fra9KnjKUcgjWLvgoZWh80YFPIau6EFMbPBsXhcoDjdHbG&_nc_ohc=PM6uioAjbEQAX8wUCW-&_nc_ht=scontent-qro1-1.xx&oh=00_AT9DGsNDrMCzb75HvjNINRwlwcs2u5nyu9r3DYviqUwCCw&oe=632F8143" class="card-img-top" alt="foto3">
+                <div class="card-body">
+                  <h5 class="card-title">Sesión fotográfica familiar</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" style="margin-top: 20px;">
+              <div class="card h-100">
+                <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t39.30808-6/273123644_354004263394883_8749960114763351383_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeGBZEgtBP8Yg7O-_bLAYSFbT2Samm320HZPZJqabfbQdgUYQdbXyLIZ6wByXQjMx4tZzAVwdePnb2XzL5DKynL4&_nc_ohc=EAWEGEAm03AAX-0YFIn&_nc_ht=scontent-qro1-1.xx&oh=00_AT_y7Yv8ZDNQDBBZt_WAsqcH1Z4L0QBIPzAwCmQYxlFGMA&oe=630C5F9E" class="card-img-top" alt="foto3">
+                <div class="card-body">
+                  <h5 class="card-title">Sesión fotográfica de pareja</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" style="margin-top: 20px;">
+              <div class="card h-100">
+                <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.6435-9/163636502_131793955615916_773653618009128665_n.jpg?_nc_cat=105&ccb=1-7&_nc_sid=730e14&_nc_eui2=AeFwAV9lRXYTsdtj23nR2gKoCItJqw5hIlMIi0mrDmEiUwwg0lhQejp-vOWL6N2eMh_q-Wks1U7x3I1vGsNXn9Eo&_nc_ohc=DKvqrgxNSx4AX9s2dyF&_nc_oc=AQn_6fHvPZ5ZXidGeyLD8CJlpeBUhwks2UMd1G5Wi9r3NTU_QBJ4OapDSyU8hlOSb2g&_nc_ht=scontent-qro1-1.xx&oh=00_AT9XWvji9GWhLFcgFkPT5GTi6TtImIs4w8lC6uQZ1UcjSA&oe=632F486F" class="card-img-top" alt="foto3">
+                <div class="card-body">
+                  <h5 class="card-title">Sesión fotográfica individual</h5>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12" style="margin-top: 20px;">
+              <div class="card h-100">
+                <img src="https://scontent-qro1-1.xx.fbcdn.net/v/t1.6435-9/140615343_241860884014292_6768092956566982833_n.jpg?_nc_cat=111&ccb=1-7&_nc_sid=8bfeb9&_nc_eui2=AeE83vRHavDx-MXlB8AswsgMBDcW_N5batQENxb83ltq1G6VFCkk2b-mFhLCPbmU0mX1rCSkb0hjgRizYkny0wkw&_nc_ohc=-sKjkxCYNLkAX9KPAch&_nc_ht=scontent-qro1-1.xx&oh=00_AT8h4XprZx25w0UY8jD3wlAG6ymAXOe03wo9iTs-bnHEiw&oe=632D447E" class="card-img-top" alt="foto3">
+                <div class="card-body">
+                  <h5 class="card-title">Sesión fotográfica para infantes</h5>
+                </div>
+              </div>
+            </div>           
+          
+          </div>   
+                    
+          
+        </div>
+      </div>
+      <!-- PAQUETES -->
+      <div class="row text-center" >
+        <div class="col" style="padding-top: 50px;">
+          <div class="" >
+            <h2>Paquetes</h2>
+          </div>
+          <div class="row" style="padding-top: 30px; border-radius: 30px;">                        
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12"  style="margin-top: 20px;"> <!-- Tarjeta con precios -->
+              <div class="card h-100">                
+                <div class="card-body">
+                  <h5 class="card-title">Quince Años</h5>
+                  <p class="card-text">Entrega de 5 a 7 días después de la sesión en álbum de foto digital vía Google Drive.</p>
+                  <p class="card-text"><small class="text-muted">Presupuesto $650</small></p>
+                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
+                    <a href="link del mercado">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Agregar al carrito
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12"  style="margin-top: 20px;"> <!-- Tarjeta con precios -->
+              <div class="card h-100">                
+                <div class="card-body">
+                  <h5 class="card-title">Quince Años</h5>
+                  <p class="card-text">Entrega de 5 a 7 días después de la sesión en álbum de foto digital vía Google Drive.</p>
+                  <p class="card-text"><small class="text-muted">Presupuesto $650</small></p>
+                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
+                    <a href="link del mercado">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Agregar al carrito
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12"  style="margin-top: 20px;"> <!-- Tarjeta con precios -->
+              <div class="card h-100">                
+                <div class="card-body">
+                  <h5 class="card-title">Quince Años</h5>
+                  <p class="card-text">Entrega de 5 a 7 días después de la sesión en álbum de foto digital vía Google Drive.</p>
+                  <p class="card-text"><small class="text-muted">Presupuesto $650</small></p>
+                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
+                    <a href="link del mercado">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Agregar al carrito
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12"  style="margin-top: 20px;"> <!-- Tarjeta con precios -->
+              <div class="card h-100">                
+                <div class="card-body">
+                  <h5 class="card-title">Quince Años</h5>
+                  <p class="card-text">Entrega de 5 a 7 días después de la sesión en álbum de foto digital vía Google Drive.</p>
+                  <p class="card-text"><small class="text-muted">Presupuesto $650</small></p>
+                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
+                    <a href="link del mercado">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Agregar al carrito
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12"  style="margin-top: 20px;"> <!-- Tarjeta con precios -->
+              <div class="card h-100">                
+                <div class="card-body">
+                  <h5 class="card-title">Quince Años</h5>
+                  <p class="card-text">Entrega de 5 a 7 días después de la sesión en álbum de foto digital vía Google Drive.</p>
+                  <p class="card-text"><small class="text-muted">Presupuesto $650</small></p>
+                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
+                    <a href="link del mercado">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Agregar al carrito
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+            <div class="col-xl-3 col-lg-3 col-md-4 col-sm-6 col-12"  style="margin-top: 20px;"> <!-- Tarjeta con precios -->
+              <div class="card h-100">                
+                <div class="card-body">
+                  <h5 class="card-title">Quince Años</h5>
+                  <p class="card-text">Entrega de 5 a 7 días después de la sesión en álbum de foto digital vía Google Drive.</p>
+                  <p class="card-text"><small class="text-muted">Presupuesto $650</small></p>
+                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
+                    <a href="link del mercado">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Agregar al carrito
+                    </a>
+                  </button>
+                </div>
+              </div>
+            </div>
+
+            
+            
+            
+          
+          </div>   
+        </div>
+      </div>
+    </div>
+ 
+
+    <!-- Footer -->
+    <footer class="footer text-while py-4 text-center mt-4" style="background-color: rgb(32, 32, 32)">
+      <div class="container">
+        <nav class="row">
+          <!-- Logo -->
+          <a href="#" class="col-3 text-reset text-uppercase d-flex align-items-center">
+            <img src="../assets/img/logoAkanW.png" alt="LogoAkan" class="img-logo mr-2">
+            <p class="text-white row-cols-2">Un lugar para el Arte</p></a>
+           
+          <!-- Menú -->
+          <ul class="col-3 list-unstyled text-white">
+            <li class="font-weight-bold text-uppercase">Contacto Akan</li><br>
+            <li><a href="" class="text-reset">(52) 55  81712- 312</a></li>
+            <li><a href="" class="text-reset">comunidadAkan@org.mx</a></li>
+            <li><a href="" class="text-reset">Miguel Hidalgo 42, CDMX</a></li>
+          </ul>
+          <!-- Menú 2 -->
+          <ul class="col-3 list-unstyled text-white">
+            <li class="font-weight-bold text-uppercase">Métodos de Pago</li><br>
+            <li><a href="" class="text-reset">Tarjetas de crédito y débito</a></li>
+            <li><a href="" class="text-reset">Tarjetas de regalo</a></li>
+            <li><a href="" class="text-reset">Paga en efectivo en OXXO</a></li>
+          </ul>
+          <!-- Redes Sociales -->
+          <ul class="col-3 list-unstyled text-white">
+            <li class="font-weight-bold text-uppercase">Social Networks</li><br>
+            <li class="d-flex justify-content-between"></li>
+            <a href="" class="text-reset"><i class="fa-brands fa-facebook-f"> </i> </a>
+            <a href="" class="text-reset"><i class="fa-brands fa-twitter"></i></a>
+            <a href="" class="text-reset"><i class="fa-brands fa-instagram"></i></a>
+            <a href="" class="text-reset"><i class="fa-brands fa-pinterest-p"></i></a>
+          </ul><br>
+              
+      </nav>
+      </div>
+      <br><p class="text-white text-center mt-6">Copyright - All rights reserved ©2002. Akan Proyect </p> 
+    </footer>
+
+
+
+    <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
+
+   
+  </body>
+</html>
