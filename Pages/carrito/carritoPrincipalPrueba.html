@@ -62,35 +62,28 @@
     <!-- Contenido de carrito -->
     <div>
       <div class="container-fluid">
-        <div class="row row-cols row-cols-md row-cols-xl">
-          <div class="carrito col-md-8 mt-4 ml-4">
-            <p class=""><h3>Carrito</h3></p>
-            <p class="text-right">Precio</p>
+        <div class="row row-cols row-cols-md row-cols-xl" id="cards">
+            <div class="carrito col-md-8 mt-4 ml-4">
+                <p class=""><h3>Carrito</h3></p>
+                <table class="table">
+                    <thead>
+                            <tr>
+                                <th scope="col">#</th>
+                                <th scope="col">Producto</th>
+                                <th scope="col">Cantidad</th>
+                                <th scope="col">Acción</th>
+                                <th scope="col">Total</th>
+                            </tr>
+                        </thead>
+                    <tbody id="items"></tbody>
+                    <tfoot>
+                        <tr id="footer">
+                            <th scope="row" colspan="5">Carrito vacío - comience a comprar!</th>
+                        </tr>
+                    </tfoot>
+                </table>
             <div class="container">
-              <div class="row align-items-start">
-                <div class="col">
-                  <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQy7imqFWVO4jf-ks9hbDhicsiKCeVa8jidiA&usqp=CAU" alt="">
-                </div>
-                <div class="col">
-                  <p>Descripcion del producto Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet suscipit nulla ex unde?</p>
-                </div>
-                <div class="col">
-                  <p class="text-right">$500</p>
-                </div>
-              </div>
-              <div class="row align-items-center">
-                <div>
-                  <div class="col">
-                    <span>Agregar producto</span>
-                    <span>Eliminar producto</span>
-                  </div>
-                </div>
-              </div>            
-              <div class="row align-items-end">
-                <div class="col">
-                  <p class="text-right">Total</p>
-                </div>
-              </div>
+
             </div>
           </div>
           <div class="carrito col-md-3 mt-4 ml-4">
@@ -107,20 +100,42 @@
       </div>
     </div>
 
-    <template id="template-card">
-      <div class="col-md-8 mt-4 ml-4">
-        <div class="card">
-            <img src="" alt="" id="card-img-top">
-          <div class="card-body">
-            <h5>Titulo</h5>
-            <p>precio</p>
-            <button class="btn btn-dark">Comprar</button>
+    <template id="template-footer">
+        <th scope="row" colspan="2">Total productos</th>
+        <td>10</td>
+        <td>
+          <button class="btn btn-danger btn-sm" id="vaciar-carrito">
+            vaciar todo
+          </button>
+        </td>
+        <td class="font-weight-bold">$ <span>5000</span></td>
+      </template>
+  
+      <template id="template-carrito">
+        <tr>
+          <th scope="row">id</th>
+          <td>Café</td>
+          <td>1</td>
+          <td>
+            <button class="btn btn-info btn-sm">Agregar</button>
+            <button class="btn btn-danger btn-sm">Eliminar</button>
+          </td>
+          <td>$ <span>500</span></td>
+        </tr>
+      </template>
+  
+      <template id="template-card">
+        <div class="col-12 mb-2 col-md-4">
+          <div class="card">
+            <img src="" alt="" class="card-img-top" />
+            <div class="card-body">
+              <h5>Titulo</h5>
+              <p>precio</p>
+              <button class="btn btn-dark">Comprar</button>
+            </div>
           </div>
         </div>
-      </div>
-    </template>
-
-      
+      </template>   
 
 
 
@@ -168,15 +183,6 @@
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct" crossorigin="anonymous"></script>
 
-    <!-- Option 2: Separate Popper and Bootstrap JS -->
-    <!--
-    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/js/bootstrap.min.js" integrity="sha384-+sLIOodYLS7CIrQpBjl+C7nPvqq+FbNUBDunl/OZv93DB7Ln/533i8e/mZXLi/P+" crossorigin="anonymous"></script>
-    -->
-
-    <!-- Ionicons -->
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <script src="carrito2.js"></script>
   </body>
 </html>
