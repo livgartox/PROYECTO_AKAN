@@ -15,11 +15,11 @@
 var iconoSpot = document.getElementById ("icon-inspirate-01");
 iconoSpot.addEventListener("mouseover", function(){
 
-//     for(i=0; i==100;i++);{
-        
-    console.log("click en el icono de spotify ");
-//     debugger;
-//     }
+    for(i=0; iconoSpot=100;i++);{
+        i= i++
+    console.log("click en el icono de spotify " + i);
+    debugger;
+    }
 
 });
 
