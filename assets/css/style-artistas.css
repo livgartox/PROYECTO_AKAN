@@ -62,6 +62,9 @@ p{   /* texto */
     font-family: Tililium Web;
 }
 
+.card-body1{
+    background-color: rgb(73, 70, 70);
+}
 
 /* Estilo botones redes sociales */
 .caja{
