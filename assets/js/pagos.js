@@ -24,3 +24,15 @@ formulario.inputNumero.addEventListener('keyup', (e) =>{
     .replace(/\D/g, '')
     .replace(/([0-9]{4})/g, '$1 ')
 });
+
+//CAPTURA DE DATOS
+
+function capturaEnvio(){
+    let arrayEnvio = new Array();
+    let enviosValores = document.getElementsByClassName("inputEnvio");
+    valoresEnvio = [].map.call(enviosValores,function(capturaEnvio){
+        arrayEnvio.push(capturaEnvio.value);
+    });
+    console.log(arrayEnvio);
+    
+}
