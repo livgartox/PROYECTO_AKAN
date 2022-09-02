@@ -26,14 +26,6 @@ background-color: #DCDCDC ;
     color: azure;
 }
 
-.dropdown-menu{ /* Menú desplegable */
-    background-color: rgb(32, 32, 32);
-}
-.dropdown-item{
-    color: antiquewhite;
-}
-
-
 .carrito{
     background-color: white;
 }
