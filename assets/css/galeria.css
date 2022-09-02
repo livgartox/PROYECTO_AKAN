@@ -1,4 +1,4 @@
-<<<<<<<< HEAD:galeria.css
+HEAD:galeria.css
 /* Body galería */
 body { background-image: url(/assets/img/fondo.png);}
 
@@ -109,7 +109,7 @@ p{ font-family: 'Titillium Web'; }
         grid-gap: 30px;
         padding: 35px 0px;}}
 
-========
+
 /* Body galería */
 body { background-image: url(/assets/img/fondo.png);}
 
@@ -220,4 +220,10 @@ p{ font-family: 'Titillium Web'; }
         grid-gap: 30px;
         padding: 35px 0px;}}
 
->>>>>>>> 66cc07c077b7ec3d95a6a2e1cc3269509c431cf7:assets/css/galeria.css
+/* NAVBAR */
+.dropdown-menu{ /* Menú desplegable */
+    background-color: rgb(32, 32, 32);
+}
+.dropdown-item{
+    color: antiquewhite;
+}
