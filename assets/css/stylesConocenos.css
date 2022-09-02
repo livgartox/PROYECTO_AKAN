@@ -7,6 +7,7 @@
 }
 
 .nav-link{ color: azure;}
+
 .nav-link:hover {color:rgb(241, 153, 117)}
 
 .logo-akan{
@@ -21,6 +22,14 @@
     font-size: 35px;
     color: azure;
 }
+
+.dropdown-menu{ /* Menú desplegable */
+    background-color: rgb(32, 32, 32);
+}
+.dropdown-item{
+    color: antiquewhite;
+}
+
 
 
 /* BODY */
