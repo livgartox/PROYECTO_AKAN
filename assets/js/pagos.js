@@ -27,6 +27,7 @@ formulario.inputNumero.addEventListener('keyup', (e) =>{
     .trim();
 });
 
+<<<<<<< HEAD
 formulario.inputCCV.addEventListener('keyup', (e) => {
 formulario.inputCCV.value = formulario.inputCCV.value
 .replace(/\s/g, '')
@@ -71,5 +72,16 @@ function capturaPago() {
     let codSeguridad = document.getElementById('inputCCV').value;
     const capturaPagoArreglo = {numeroT:numTarjeta,nombreT:nombreTarjeta,mes:mes, year:year,ccv:codSeguridad}
     console.log(capturaPagoArreglo);
+=======
+//CAPTURA DE DATOS
+
+function capturaEnvio(){
+    let arrayEnvio = new Array();
+    let enviosValores = document.getElementsByClassName("inputEnvio");
+    valoresEnvio = [].map.call(enviosValores,function(capturaEnvio){
+        arrayEnvio.push(capturaEnvio.value);
+    });
+    console.log(arrayEnvio);
+>>>>>>> 11c99b8207540e9e4f1b1947d6b5ae552a0c7b05
     
 }
