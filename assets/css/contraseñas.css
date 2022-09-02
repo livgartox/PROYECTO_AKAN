@@ -5,7 +5,7 @@ body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Titillium Web', sans-serif;
     font-size: top;
-    background-image:url(../assets/img/logo-akan.jpeg);
+    background-image:url(assets/img/logo-ajan-2.jpeg);
     background-size: cover;
     background-position: center ;
     background-attachment: fixed; 
@@ -67,8 +67,7 @@ body {
     min-width: 110px;
     max-width: 115px;
 }
-
-/* footer  */
+/* Footer */
 .pie-pagina{
     width: 100%;
     background-color: rgb(32, 32, 32); }
@@ -130,7 +129,4 @@ body {
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;}}
-
-
-
 

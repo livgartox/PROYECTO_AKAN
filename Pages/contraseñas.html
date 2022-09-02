@@ -1,17 +1,15 @@
 <!DOCTYPE html>
 <html lang="es">
-
 <head>
   <!-- Required meta tags -->
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
   <!-- Bootstrap CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css"
     integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
   <!-- enlazar hoja de estilos -->
   <link rel="stylesheet" href="../assets/css/style-generales.css">
-  <link rel="stylesheet" href="/assets/css/style-SignIn.css">
+  <link rel="stylesheet" href="../assets/css/contraseñas.css">
   <!-- google fonts: Roboto-->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -20,24 +18,22 @@
   <!-- Ionicons -->
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-  <link rel="icon" type="image/jpg" href="../assets/img/faviconAkan.png"/>
+  <link rel="icon" type="image/jpg" href="../assets/img/faviconAkan.png" />
   <link rel="icon" type="img/png" href="../assets/img/faviconAkan.png"/>
-  <title>Sign In | Akan</title>
+     <!-- Enlace Font Awsome -->
+    
+
+
+  <title>Log In | Akan</title>
 </head>
-
 <body>
-
-
-
-
   <!-- Navbar -->
   <div class="fixed-top">
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg">
       <div class="container-fluid">
         <!--Creamos un contenedor para centrar -->
-        <a class="navbar-brand" href="#"><img src="../assets/img/logoAkanW.png" class="logo-akan"
-            alt="logo">Akan "Un
+        <a class="navbar-brand" href="#"><img src="../assets/img/logoAkanW.png" class="logo-akan" alt="logo">Akan "Un
           lugar para el Arte"</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
           aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -45,86 +41,71 @@
         </button>
 
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav ml-auto">
-            <!-- mr a ml para q los links se vayan del lado derecho -->
-            <li class="nav-item">
-              <a class="nav-link" href="../index.html" id="Inicio">Inicio</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="inspirate.html" id="Inspirate">Inspirate</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="galeria.html" id="Galeria">Galeria</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="paginaArtista.html" id="Artistas">Artistas</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="../Pages/Conocenos.html" id="Inicio">Conocenos</a>
-            </li>
-          </ul>
+            <ul class="navbar-nav ml-auto">
+              <!-- mr a ml para q los links se vayan del lado derecho -->
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html" id="Inicio">Inicio</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="inspirate.html" id="Inspirate">Inspirate</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="galeria.html" id="Galeria">Galeria</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#" id="Artistas">Artistas</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../Pages/Conocenos.html" id="Inicio">Conocenos</a>
+                </li>
+            </ul>
         </div>
       </div>
     </nav>
   </div>
- <br>
-<br>
-<br>
-<br>
-
-
-
   <br>
-  <main in role="main" class="container">
-    <div class="row">
-      <img id="logo" src="../assets/img/logo-akan.jpeg" class="img-fluid max-auto float-right" alt="...">
-      <div id="signin" class="col-lg-4  col-md-6 offset-md-1
+  <br>
+  <br>
+  <main role="main" class="container">
+    <div class="row mt-5">
+      <img id="logo" src="../assets/img/logo-akan.jpeg" class="img-fluid mx-auto float-right" alt="...">
+      <div id="login" class="col-lg-4  col-md-6 offset-md-1
                     col-12">
 
-                    <h2 class="text-center">Registrate</h2><br>
-                    
+        <h1 class="text-center ">¿ Olvidaste tu Contraseña ?</h1>
+        <br>
+
+
         <!--  Formulario de registro -->
-        <form>
+
+        <form id="formRegistro">
           <div class="form-group">
-            <label for="name">Nombre</label>
-            <input id="name" name="regis" class="form-control" required="" type="text" placeholder="Nombre">
-          </div>
-          <br>
-          <label for="correo">Correo</label>
-          <div class="form-group">
-            <input id="correo" name="regis" class="form-control" required="" type="email" placeholder="Correo electrónico">
+            <label for="correo">Correo</label>
+            <input id="correo2" name="correo1" class="form-control datoInput" required="correo" type="email"
+              placeholder="Correo electrónico">
           </div>
           <br>
           <div class="form-group">
-            <label for="palabraSecreta">Contraseña</label>
-            <input id="palabraSecreta1" name="regis" class="form-control" required="" type="password"
-              placeholder="Contraseña">
+            <label for="palabraSecreta">Nueva Contraseña</label>
+            <input id="contra-1" name="contra-1" class="form-control datoInput" required="palabraSecreta1"
+              type="password" placeholder="Contraseña">
           </div>
           <br>
           <div class="form-group">
             <label for="palabraSecreta">Confirmar Contraseña</label>
-            <input id="palabraSecreta2" name="regis" class="form-control" required="" type="password"
-              placeholder="Confirmar Contraseña">
+            <input id="contra-2" name="contra-2" class="form-control datoInput" required="palabraSecreta1"
+              type="password" placeholder="Contraseña">
           </div>
           <br>
-          <div class="form-group">
-            <label for="palabraSecreta">Fecha de Nacimiento</label>
-            <input id="fecha" name="regis" class="form-control" required="" type="date"
-              placeholder="Fecha de Nacimiento">
-          </div>
-          <br>
-          <button type="submit" class="btn btn-outline-primary mb-2" onclick="registro(),arraySing()">
-            Crear Cuenta
+          <button type="submit" class="btn btn-outline-primary mb-2" onclick="contraseOlv()+viewArrayInput()">
+            Enviar
           </button>
-          <br>
           <p><a href="LogIn.html" class="message text-secondary">Iniciar Sesion</a></p>
-
-
         </form>
       </div>
     </div>
+    </div>
   </main>
-
 
   <footer class="pie-pagina">
     <div class="grupo-1">
@@ -152,6 +133,9 @@
             </div>
         </div>
     </div>
+  
+ 
+
   <!-- Optional JavaScript; choose one of the two! -->
 
   <!-- Option 1: jQuery and Bootstrap Bundle (includes Popper) -->
@@ -162,8 +146,7 @@
     integrity="sha384-Fy6S3B9q64WdZWQUiU+q4/2Lc9npb8tCaSX9FK7E8HnRr0Jz8D6OP9dO5Vg3Q9ct"
     crossorigin="anonymous"></script>
     <script src="https://kit.fontawesome.com/5f6a1a0689.js" crossorigin="anonymous"></script>
-    <script src="../assets/js/SignIn.js"></script>
-
+  <script src="../assets/js/contraseñas.js"></script>
   <!-- Option 2: Separate Popper and Bootstrap JS -->
   <!--
     <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
