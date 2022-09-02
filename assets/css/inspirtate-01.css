@@ -39,6 +39,12 @@ font-family: 'Titillium Web', sans-serif;
 }
 
 /* navbar */
+.dropdown-menu{ /* Menú desplegable */
+    background-color: rgb(32, 32, 32);
+}
+.dropdown-item{
+    color: antiquewhite;
+}
 .navbar{
     background-color: rgb(32, 32, 32);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
