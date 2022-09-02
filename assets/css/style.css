@@ -2,7 +2,7 @@
 body {
     font-family: 'Roboto', sans-serif;
     font-family: 'Titillium Web', sans-serif;
-    background-image: url(/assets/img/fondoColores.png);
+    background-image: url(../img/fondoColores.png);
     background-color: #dadada;
  
 }
