@@ -56,22 +56,7 @@ border-bottom-right-radius: 40%;
         transition:0.2s;
         }
 }
-/* Esto es para que los botones cambien de color al ser seleccionados */
-@media (hover: hover){
-    .botongoartist:hover{
-        color: white;
-        background-color: gray;
-    }
-}
-/* //quizá esto se borre porque no parece hacer nada*/
-.botongoartist:active{
-    color: white;
-    background-color: rgb(9, 10, 9);
-    border-radius: 50px;
-    border: 5px solid rgb(73, 217, 121);
-    margin: 3px;
-    transition:0.5s;
-}
+
 @media screen and ( max-width: 992px){
     .cardcentrar{
         align-items: center;
@@ -93,8 +78,7 @@ large: mayor a 992 se deben ver 3
 
 
 /* foooter */
-/* Footer */
-/* Footer */
+
 .pie-pagina{
     width: 100%;
     background-color: rgb(32, 32, 32); }
