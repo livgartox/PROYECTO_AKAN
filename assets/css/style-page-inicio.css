@@ -1,3 +1,11 @@
+/* PARA LA NAVBAR */
+.dropdown-menu{ /* Menú desplegable */
+    background-color: rgb(32, 32, 32);
+}
+.dropdown-item{
+    color: antiquewhite;
+}
+
 /* 
 Para el fondo*/
 body{
