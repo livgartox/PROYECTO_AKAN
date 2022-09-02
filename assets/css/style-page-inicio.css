@@ -1,15 +1,15 @@
-<<<<<<< HEAD
 /* 
 Para el fondo*/
 body{
     background-image: url(../img/img-inicio/fondoColores.png);
+    background-color: #dadada;
 }
 
 
 /* Para el carrusel */
 .img-carousel{
-    height: calc(50vh - 76px);
-    width: calc(50vh - 76px);
+    height: calc(60vh - 76px);
+    width: calc(60vh - 76px);
     object-fit: cover;
 }
 /* ---------------------Para el top de artistas */
@@ -52,7 +52,7 @@ border-bottom-right-radius: 40%;
 @media (hover: hover){
     .card-img-top:hover,
     .card-img-top-obras:hover{
-        transform: scale(1.2);/* scale(1.05) */
+        transform: scale(1.1);/* scale(1.05) */
         transition:0.2s;
         }
 }
@@ -61,10 +61,6 @@ border-bottom-right-radius: 40%;
     .botongoartist:hover{
         color: white;
         background-color: gray;
-        border-radius: 50px;
-        border: 5px solid rgb(63, 241, 122);
-        margin: 3px;
-        transition:0.5s;
     }
 }
 /* //quizá esto se borre porque no parece hacer nada*/
@@ -94,23 +90,77 @@ large: mayor a 992 se deben ver 3
 .titulos{
     font-family: "Aboreto";
 }
-=======
-.img-carousel{
-        height: calc(50vh - 76px);
-        object-fit: cover;
+
+
+/* foooter */
+/* Footer */
+/* Footer */
+.pie-pagina{
+    width: 100%;
+    background-color: rgb(32, 32, 32); }
+
+.pie-pagina .grupo-1{
+    width: 100%;
+    max-width: 1100px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    padding: 45px 0px; }
+
+.pie-pagina .grupo-1 .box figure{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+
+.pie-pagina .grupo-1 .box figure img{ width: 190px; }
+
+.pie-pagina .grupo-1 .box h2{
+    color: rgb(255, 255, 255);
+    margin-bottom: 25px;
+    font-size: 20px;}
+
+.pie-pagina .grupo-1 .box p{
+    color: white;
+    margin-bottom: 10px;}
+
+.pie-pagina .grupo-1 .red-social a{
+    display: inline-block;
+    text-decoration: none;
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    color: #fff;
+    margin-right: 10px;
+    background-color: rgb(46, 46, 46);
+    text-align: center;
+    transition: all 300ms ease;}
+
+.pie-pagina .grupo-1 .red-social a:hover{
+    color: aqua;
+    align-items: center;}
+
+.pie-pagina .grupo-2{
+    background-color: rgb(32,32,32);
+    padding: 15px 10px;
+    text-align: center;
+    color: #fff;}
+
+.pie-pagina .grupo-2 small{ font-size: 15px;}
+
+@media screen and (max-width: 800px) {
+    .pie-pagina .grupo-1{
+        width: 90%;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 30px;
+        padding: 35px 0px;}}
+
+.footer {
+    background-color: #000000;
+   }
+   .img-logo{
+    min-width: 110px;
+    max-width: 115px;
 }
-.card-img-top{
-    max-height: calc(50vh - 80px);
-    object-fit: cover;
-    border-bottom: 4px dotted red;
-    border-top: 4px dotted red;
-}
-.card-img-top-obras{
-    max-height: calc(50vh - 10px);
-    object-fit: cover;
-    border-top-left-radius: 30px;
-    border-top-right-radius: 30px;
-    border-bottom-left-radius: 40%;
-    border-bottom-right-radius: 40%;
-}
->>>>>>> 043ebed1cd452480ba98f2edf230a17e21dba187
