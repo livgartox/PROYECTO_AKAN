@@ -320,11 +320,7 @@ margin-bottom: 0%;
 
 }
 
-.footer {
- background-color: #000000;
 
-
-}
 .img-logo{
     min-width: 110px;
     max-width: 115px;
@@ -336,7 +332,11 @@ border-radius: 30px;
 margin: 10px;
 }
 
+<<<<<<< HEAD
+/* footer  */
+=======
 /* Footer */
+>>>>>>> 0d2fb8e6336b13fedcce44d5cd7f0a2ed09e8fc7
 .pie-pagina{
     width: 100%;
     background-color: rgb(32, 32, 32); }
@@ -400,4 +400,7 @@ margin: 10px;
         padding: 35px 0px;}}
 
 
+<<<<<<< HEAD
+=======
 
+>>>>>>> 0d2fb8e6336b13fedcce44d5cd7f0a2ed09e8fc7
