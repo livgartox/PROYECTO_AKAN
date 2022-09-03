@@ -39,6 +39,12 @@ font-family: 'Titillium Web', sans-serif;
 }
 
 /* navbar */
+.dropdown-menu{ /* Menú desplegable */
+    background-color: rgb(32, 32, 32);
+}
+.dropdown-item{
+    color: antiquewhite;
+}
 .navbar{
     background-color: rgb(32, 32, 32);
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
@@ -326,7 +332,11 @@ border-radius: 30px;
 margin: 10px;
 }
 
+<<<<<<< HEAD
 /* footer  */
+=======
+/* Footer */
+>>>>>>> 0d2fb8e6336b13fedcce44d5cd7f0a2ed09e8fc7
 .pie-pagina{
     width: 100%;
     background-color: rgb(32, 32, 32); }
@@ -390,3 +400,7 @@ margin: 10px;
         padding: 35px 0px;}}
 
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> 0d2fb8e6336b13fedcce44d5cd7f0a2ed09e8fc7

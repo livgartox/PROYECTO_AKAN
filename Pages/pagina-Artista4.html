@@ -12,16 +12,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&family=Titillium+Web&display=swap" rel="stylesheet">
     <!-- Ionicons -->
-    <!-- <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script> -->
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
     <script src="https://kit.fontawesome.com/0a3ae2fadb.js" crossorigin="anonymous"></script> <!-- Link para los iconos de redes sociales-->
     <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Aboreto&family=Oswald:wght@400;500&family=Red+Hat+Display:wght@300&family=Rubik+Dirt&display=swap" rel="stylesheet"> <!-- para la tipografía -->
     <link rel="icon" type="img/png" href="/assets/img/faviconAkan.png"/>
      <!-- Enlace Font Awsome -->
     <script src="https://kit.fontawesome.com/5f6a1a0689.js" crossorigin="anonymous"></script>
+    <link rel="icon" type="img/png" href="../assets/img/faviconAkan.png"/> <!-- Este es para el icono del navegador -->
 
 
-    <title>Página de Artista</title> <!-- PAGINA PILAR -->
+
+    <title>Página de Artista</title> <!-- CAsaKu -->
   </head>
   <body>
 
@@ -29,23 +31,35 @@
     <div class="fixed-top">
       <nav class="navbar navbar-expand-lg">
           <div class="container"> <!--Creamos un contenedor para centrar -->
-          <a class="navbar-brand" href="#"><img src="assets/img/logoAkanW.png" class="logo-akan" alt="logo">Akan "Un lugar para el Arte"</a>
+          <a class="navbar-brand" href="../index.html"><img src="../assets/img/logoAkanW.png" class="logo-akan" alt="logo">Akan "Un lugar para el Arte"</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
               <ion-icon name="menu-outline" class="navbar-toogler"></ion-icon> <!-- menu responsivo para movil -->
           </button>
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav ml-auto">  <!-- mr a ml para q los links se vayan del lado derecho -->
               <li class="nav-item">
-                <a class="nav-link" href="#" id="Inicio">Inicio</a>
+                <a class="nav-link" href="../index.html" id="Inicio">Inicio</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" id="Inspirate">Inspirate</a>
+                <a class="nav-link" href="inspirate.html" id="Inspirate">Inspírate</a>
               </li>           
               <li class="nav-item">
-                <a class="nav-link" href="#" id="Galeria">Galeria</a>
+                <a class="nav-link" href="galeria.html" id="Galeria">Galería</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-toggle="dropdown" aria-expanded="false">
+                  Artistas
+                </a>
+                <ul class="dropdown-menu">
+                  <li><a class="dropdown-item" href="pagina-artista1.html">Kalanchoe Sauty</a></li>
+                  <li><a class="dropdown-item" href="pagina-Artista2.html">JesuNoJesus</a></li>
+                  <li><a class="dropdown-item" href="pagina-artista3.html">Zintla Violenta</a></li>
+                  <li><a class="dropdown-item" href="pagina-Artista4.html">Casa Ku'u</a></li>
+                  <li><a class="dropdown-item" href="pagina-artista5.html">Jannethe_odowd</a></li>
+                </ul>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#" id="Artistas">Artistas</a>
+                <a class="nav-link" href="Conocenos.html" id="Artistas">Conócenos</a>
               </li>
             </ul>
           </div>
@@ -53,13 +67,15 @@
       </nav>
       <!-- Barra de búsqueda -->
       <nav class="navbar navbar-light bg-light">
-        <a class="navbar-brand" href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAchJREFUSEuNls1RAzEMhT9VEEogFQAdpAOGCsg5ORA6oAPCIbkCHdABQwehAqACQgVmdr1ry7YEm0PGo8j6edJ7jqA+AoT+q7QKIdmbn7XrcM4+Qnem/y6CNp5GmNKUi+uChhRO7Kq9eNVlp+O+2iFw7MDDyctu2F0QlK8FUk6tIwxnjbWuGsIBuOja0BCpBAMUf3agR6cz9ucv4HQcbz3kLchNrijBmRfB6KZalluEbbd67Qxi5g9/zP8u3M9Q/bGHqAE5wnKAcObupsEVlfYZWI53iw4U5Bvgvt0unw4q5xz4HLnVJogxToDvSR2UG/UGLIoRNfPKhhfgchqFk9cV0N1LUuBKhcAywGMcVKZ+ebnQqPcA57W/4oEOlNo4AjOBeehwrWRriswUW5RVMwH7ROBa4CFAN/hCFzWTc5eW2PlAL0Be7c1vkoknyAZVi4x3ApsgzOp3wng4tAAkcpv1N0KW9qIJm18pQ1JbJmtRyVPcIawI7AXWCgrPrhZV1a+3oipGwxsFJr6tQTE2zaDm1hQu7ULfgewhrOOFPswOWAF7YLDrcJaaelLczMAjYFmv8yYblw1WeYtQ9uDskP6r0rgY2+L5/ALyscYg6RQ2YAAAAABJRU5ErkJggg=="/></a>
+        <a class="navbar-brand" href="carrito.html"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAAAXNSR0IArs4c6QAAAchJREFUSEuNls1RAzEMhT9VEEogFQAdpAOGCsg5ORA6oAPCIbkCHdABQwehAqACQgVmdr1ry7YEm0PGo8j6edJ7jqA+AoT+q7QKIdmbn7XrcM4+Qnem/y6CNp5GmNKUi+uChhRO7Kq9eNVlp+O+2iFw7MDDyctu2F0QlK8FUk6tIwxnjbWuGsIBuOja0BCpBAMUf3agR6cz9ucv4HQcbz3kLchNrijBmRfB6KZalluEbbd67Qxi5g9/zP8u3M9Q/bGHqAE5wnKAcObupsEVlfYZWI53iw4U5Bvgvt0unw4q5xz4HLnVJogxToDvSR2UG/UGLIoRNfPKhhfgchqFk9cV0N1LUuBKhcAywGMcVKZ+ebnQqPcA57W/4oEOlNo4AjOBeehwrWRriswUW5RVMwH7ROBa4CFAN/hCFzWTc5eW2PlAL0Be7c1vkoknyAZVi4x3ApsgzOp3wng4tAAkcpv1N0KW9qIJm18pQ1JbJmtRyVPcIawI7AXWCgrPrhZV1a+3oipGwxsFJr6tQTE2zaDm1hQu7ULfgewhrOOFPswOWAF7YLDrcJaaelLczMAjYFmv8yYblw1WeYtQ9uDskP6r0rgY2+L5/ALyscYg6RQ2YAAAAABJRU5ErkJggg=="/></a>
         <form class="form-inline">
           <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
           <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
         </form>
       </nav>
     </div>
+
+      
     <!-- página del artista -->
 
     <div class="container" style="margin-top: 160px;">
@@ -121,11 +137,9 @@
                 <div class="card-body">
                   <h5 class="card-title">Llavero de muñeca tejida</h5> 
                   <p class="card-text">$135</p>
-                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
-                    <a href="link del mercado">
+                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);" class="btn btn-secondary p-1">
                       <i class="fa-solid fa-cart-shopping"></i>
                       Agregar al carrito
-                    </a>
                   </button>
                 </div>
               </div>
@@ -136,11 +150,9 @@
                 <div class="card-body">
                   <h5 class="card-title">Llavero de muñeca tejida</h5>
                   <p class="card-text">$135</p>
-                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
-                    <a href="link del mercado">
+                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);" class="btn btn-secondary p-1">
                       <i class="fa-solid fa-cart-shopping"></i>
                       Agregar al carrito
-                    </a>
                   </button>
                 </div>
               </div>
@@ -151,11 +163,9 @@
                 <div class="card-body">
                   <h5 class="card-title">Bolsa tejida y bordada</h5>
                   <p class="card-text">$395</p>
-                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
-                    <a href="link del mercado">
+                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);" class="btn btn-secondary p-1">
                       <i class="fa-solid fa-cart-shopping"></i>
                       Agregar al carrito
-                    </a>
                   </button>
                 </div>
               </div>
@@ -166,11 +176,9 @@
                 <div class="card-body">
                   <h5 class="card-title">Bolsa tejida y bordada</h5>
                   <p class="card-text">$135</p>
-                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
-                    <a href="link del mercado">
+                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);" class="btn btn-secondary p-1">
                       <i class="fa-solid fa-cart-shopping"></i>
                       Agregar al carrito
-                    </a>
                   </button>
                 </div>
               </div>
@@ -181,12 +189,10 @@
                   <div class="card-body">
                     <h5 class="card-title">Collar bordado a mano </h5> <br>
                     <p class="card-text">$390</p>
-                    <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
-                      <a href="link del mercado">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        Agregar al carrito
-                      </a>
-                    </button>
+                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);" class="btn btn-secondary p-1">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Agregar al carrito
+                  </button>
                   </div>
                 </div>
             </div>
@@ -196,12 +202,10 @@
                   <div class="card-body">
                     <h5 class="card-title">Libreta con pasta dura bordada </h5>
                     <p class="card-text">$100</p>
-                    <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
-                      <a href="link del mercado">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        Agregar al carrito
-                      </a>
-                    </button>
+                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);" class="btn btn-secondary p-1">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Agregar al carrito
+                  </button>
                   </div>
                 </div>
             </div>  
@@ -211,12 +215,10 @@
                   <div class="card-body">
                     <h5 class="card-title">Mezcalera de barro negro</h5> <br>
                     <p class="card-text">$60</p>
-                    <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
-                      <a href="link del mercado">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        Agregar al carrito
-                      </a>
-                    </button>
+                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);" class="btn btn-secondary p-1">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Agregar al carrito
+                  </button>
                   </div>
                 </div>
             </div>            
@@ -226,12 +228,10 @@
                   <div class="card-body">
                     <h5 class="card-title">Aretes bordados a mano</h5> <br>
                     <p class="card-text">$300</p>
-                    <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
-                      <a href="link del mercado">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        Agregar al carrito
-                      </a>
-                    </button>
+                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);" class="btn btn-secondary p-1">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Agregar al carrito
+                  </button>
                   </div>
                 </div>
             </div>
@@ -241,12 +241,10 @@
                   <div class="card-body">
                     <h5 class="card-title">Libretas artesanales personalizadas</h5>
                     <p class="card-text">$85</p>
-                    <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
-                      <a href="link del mercado">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        Agregar al carrito
-                      </a>
-                    </button>
+                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);" class="btn btn-secondary p-1">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Agregar al carrito
+                  </button>
                   </div>
                 </div>
             </div>
@@ -256,12 +254,10 @@
                   <div class="card-body">
                     <h5 class="card-title">Cojín bordado a mano</h5> <br>
                     <p class="card-text">$350</p>
-                    <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);">
-                      <a href="link del mercado">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        Agregar al carrito
-                      </a>
-                    </button>
+                  <button style="border-radius: 6px; background-color: rgb(245, 244, 244); color: rgb(10, 10, 10);" class="btn btn-secondary p-1">
+                      <i class="fa-solid fa-cart-shopping"></i>
+                      Agregar al carrito
+                  </button>
                   </div>
                 </div>
             </div>            
@@ -281,7 +277,7 @@
           <div class="box">
               <figure>
               <a href="#">
-                  <img src="../assets/img/logoAkanW.png" alt="logotipo" width="7px">  
+                  <img src="../assets/img/logoFooter.png" alt="logotipo" width="7px">  
               </a>
               </figure>
           </div>

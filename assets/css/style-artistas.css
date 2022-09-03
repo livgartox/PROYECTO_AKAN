@@ -123,6 +123,13 @@ p{   /* texto */
 .card-body1{
     background-color: rgb(73, 70, 70);
 }
+.dropdown-menu{ /* Menú desplegable */
+    background-color: rgb(32, 32, 32);
+}
+.dropdown-item{
+    color: antiquewhite;
+}
+
 
 /* Estilo botones redes sociales */
 .caja{

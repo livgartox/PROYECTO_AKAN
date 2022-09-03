@@ -59,8 +59,17 @@ body {
   color: slategray;
 }
 
-#signin {
+#login {
   position: static;
+}
+#img {
+  padding: 0;
+  margin: 0;
+  background: transparent;
+}
+#contraseña {
+  padding: 0;
+  border: 0;
 }
 
 #logo {
@@ -72,7 +81,6 @@ body {
   min-width: 110px;
   max-width: 115px;
 }
-
 /* Footer */
 .pie-pagina {
   width: 100%;

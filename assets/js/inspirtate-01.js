@@ -8,20 +8,25 @@
 // console.log("play");
 // });
 
+do {
+    i = i + 1;
+    result = result + i;
+  } while (i < 5);
 
 
-
-
+for (let i = 0; i <2; i++){
 var iconoSpot = document.getElementById ("icon-inspirate-01");
 iconoSpot.addEventListener("mouseover", function(){
 
-    for(i=0; iconoSpot=100;i++);{
-        i= i++
-    console.log("click en el icono de spotify " + i);
-    debugger;
-    }
+  
+
+        console.log("for principal " + i);
+        // for (let j = 0; j <i;j++){
+        // console.log("for interno" + j);
+        // }
 
 });
+}
 
  let iconoIg = document.getElementById ("icon-inspirate-02");
 iconoIg.addEventListener("mouseover", function(){
