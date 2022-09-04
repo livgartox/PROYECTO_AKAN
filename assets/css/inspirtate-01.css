@@ -332,11 +332,7 @@ border-radius: 30px;
 margin: 10px;
 }
 
-<<<<<<< HEAD
-/* footer  */
-=======
-/* Footer */
->>>>>>> 0d2fb8e6336b13fedcce44d5cd7f0a2ed09e8fc7
+/* footer */
 .pie-pagina{
     width: 100%;
     background-color: rgb(32, 32, 32); }
@@ -398,9 +394,3 @@ margin: 10px;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 30px;
         padding: 35px 0px;}}
-
-
-<<<<<<< HEAD
-=======
-
->>>>>>> 0d2fb8e6336b13fedcce44d5cd7f0a2ed09e8fc7
