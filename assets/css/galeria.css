@@ -57,7 +57,7 @@ p{ font-family: 'Titillium Web'; }
 /* CARTAS */
 .card-img-top {
     height: 200px;  
-    width: 350px;
+    width: auto;
     object-fit: cover; }
 
 .img-fluid{  
@@ -67,6 +67,7 @@ p{ font-family: 'Titillium Web'; }
 
 /* menú categorias de artistas */
 .page-link{
+    height: 50px;
     background-color: rgb(236, 141, 77);
     color: rgb(255, 255, 255);}
 
