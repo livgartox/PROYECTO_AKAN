@@ -6,11 +6,11 @@ const footer=document.getElementById('footer');
 console.log("a ver",items);
 
 //Para la Galería
-cardaCambiar=['cards1','cards2','cards3']
+cardaCambiar=['cards1','cards2','cards3','cards4','cards5']
 const templateCard=document.getElementById('template-card').content
 const fragment=document.createDocumentFragment()//fragment es como una memoria volatil
-a=['api1.json','api2.json','api3.json']
-for(i=0;i<=2;i++){
+a=['api1.json','api2.json','api3.json','api4.json','api5.json']
+for(i=0;i<=4;i++){
     b=a[i]
     const cards=document.getElementById(cardaCambiar[i]);
     const fetchData=async()=>{
