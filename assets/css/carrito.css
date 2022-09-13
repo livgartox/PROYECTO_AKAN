@@ -40,3 +40,9 @@ background-color: #DCDCDC ;
     min-width: 110px;
     max-width: 115px;
 }
+
+/* FOOTER FINAL */
+.footer {
+    background-color: #3f4140;
+    display: block;
+}
