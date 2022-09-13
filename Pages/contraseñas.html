@@ -82,26 +82,26 @@
 
         <!--  Formulario de registro -->
 
-        <form id="formRegistro">
+        <form id="formRegistro" >
           <div class="form-group">
             <label for="correo">Correo</label>
-            <input id="correo2" name="correo1" class="form-control datoInput" required="correo" type="email"
-              placeholder="Correo electrónico">
+            <input id="correo2" name="correo1" class="form-control datoInput"  type="email"
+              placeholder="Correo electrónico" required>
           </div>
           <br>
           <div class="form-group">
             <label for="palabraSecreta">Nueva Contraseña</label>
-            <input id="contra-1" name="contra-1" class="form-control datoInput" required="palabraSecreta1"
-              type="password" placeholder="Contraseña">
+            <input id="contra-1" name="contra-1" class="form-control datoInput" 
+              type="password" placeholder="Contraseña" required>
           </div>
           <br>
           <div class="form-group">
             <label for="palabraSecreta">Confirmar Contraseña</label>
-            <input id="contra-2" name="contra-2" class="form-control datoInput" required="palabraSecreta1"
-              type="password" placeholder="Contraseña">
+            <input id="contra-2" name="contra-2" class="form-control datoInput" 
+              type="password" placeholder="Contraseña" required>
           </div>
           <br>
-          <button type="submit" class="btn btn-outline-primary mb-2" onclick="contraseOlv()+viewArrayInput()">
+          <button id="button" type="submit" class="btn btn-outline-primary mb-2" onclick="contraseOlv()">
             Enviar
           </button>
           <p><a href="LogIn.html" class="message text-secondary">Iniciar Sesion</a></p>
