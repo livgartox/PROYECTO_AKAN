@@ -37,6 +37,12 @@ public class DetalleDePedidoModels {
 	
 	@OneToMany(mappedBy="id_pedido")
 	private List<ProductosYPedidosModels> productosypedidos;
+	
+	@OneToMany(mappedBy = "id_pedido")
+    private List<EnvioModels> pedidoyenvio;
+	
+	@OneToMany(mappedBy = "id_pedido")
+    private List<PagoModel> pedidoypago;
 
 	public Long getId_pedido() {
 		return id_pedido;
@@ -78,6 +84,22 @@ public class DetalleDePedidoModels {
 		this.productosypedidos = productosypedidos;
 	}
 
+	public List<EnvioModels> getPedidoyenvio() {
+		return pedidoyenvio;
+	}
+
+	public void setPedidoyenvio(List<EnvioModels> pedidoyenvio) {
+		this.pedidoyenvio = pedidoyenvio;
+	}
+
+	public List<PagoModel> getPedidoypago() {
+		return pedidoypago;
+	}
+
+	public void setPedidoypago(List<PagoModel> pedidoypago) {
+		this.pedidoypago = pedidoypago;
+	}
+	
 	
 	
 	
