@@ -16,11 +16,11 @@ public class ProductosYpedidosServices {
 	@Autowired
 	ProductosPedidosRepositories productoypedidorepositories;
 	
-	public ArrayList<ProductosYPedidosModels> obtenerUsuarios(){
+	public ArrayList<ProductosYPedidosModels> obtenerProductosyPedidos(){
 		return (ArrayList<ProductosYPedidosModels>)productoypedidorepositories.findAll();
 		
 	}
-	public ProductosYPedidosModels guardarUsuario(ProductosYPedidosModels usuario){
+	public ProductosYPedidosModels guardarProductosyPedidos(ProductosYPedidosModels usuario){
         return productoypedidorepositories.save(usuario);
     }
 	
@@ -28,7 +28,7 @@ public class ProductosYpedidosServices {
         return productoypedidorepositories.findById(id);
     }
 	
-	public boolean eliminarUsuario(Long id) {
+	public boolean eliminarProductosyPedidos(Long id) {
         try{
         	productoypedidorepositories.deleteById(id);
             return true;

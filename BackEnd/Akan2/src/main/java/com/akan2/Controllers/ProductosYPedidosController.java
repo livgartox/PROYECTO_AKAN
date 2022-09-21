@@ -27,21 +27,23 @@ import com.akan2.Services.ProductosYpedidosServices;
 public class ProductosYPedidosController {
 	@Autowired
 	ProductosYpedidosServices productoypedidoServices;
+	
+	
 	@GetMapping()
-	public ArrayList<ProductosYPedidosModels> obtenerUsuarios(){
-	        return productoypedidoServices.obtenerUsuarios();
+	public ArrayList<ProductosYPedidosModels> obtenerProductosyPedidos(){
+	        return productoypedidoServices.obtenerProductosyPedidos();
 	}
 	@PostMapping()
-	public ProductosYPedidosModels guardarUsuario(@RequestBody ProductosYPedidosModels usuario){
-        return this.productoypedidoServices.guardarUsuario(usuario);
+	public ProductosYPedidosModels guardarProductosyServicios(@RequestBody ProductosYPedidosModels usuario){
+        return this.productoypedidoServices.guardarProductosyPedidos(usuario);
     }
 	@GetMapping( path = "/{id}")
-	public Optional<ProductosYPedidosModels> obtenerUsuarioPorId(@PathVariable("id") Long id) {
+	public Optional<ProductosYPedidosModels> obtenerProductosyPedidosPorId(@PathVariable("id") Long id) {
         return this.productoypedidoServices.obtenerPorId(id);
     }
 	@DeleteMapping( path = "/{id}")
 	public String eliminarPorId(@PathVariable("id") Long id){
-        boolean ok = this.productoypedidoServices.eliminarUsuario(id);
+        boolean ok = this.productoypedidoServices.eliminarProductosyPedidos(id);
         if (ok){
             return "Se eliminó el usuario con id " + id;
         }else{

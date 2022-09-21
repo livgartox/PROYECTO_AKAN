@@ -28,20 +28,20 @@ public class PagoControllers {
 	@Autowired
 	PagoServices pagoServices;
 	@GetMapping()
-	public ArrayList<PagoModel> obtenerUsuarios(){
-	        return pagoServices.obtenerUsuarios();
+	public ArrayList<PagoModel> obtenerPago(){
+	        return pagoServices.obtenerPago();
 	}
 	@PostMapping()
-	public PagoModel guardarUsuario(@RequestBody PagoModel usuario){
-        return this.pagoServices.guardarUsuario(usuario);
+	public PagoModel guardarPago(@RequestBody PagoModel usuario){
+        return this.pagoServices.guardarPago(usuario);
     }
 	@GetMapping( path = "/{id}")
-	public Optional<PagoModel> obtenerUsuarioPorId(@PathVariable("id") Long id) {
+	public Optional<PagoModel> obtenerPagoPorId(@PathVariable("id") Long id) {
         return this.pagoServices.obtenerPorId(id);
     }
 	@DeleteMapping( path = "/{id}")
 	public String eliminarPorId(@PathVariable("id") Long id){
-        boolean ok = this.pagoServices.eliminarUsuario(id);
+        boolean ok = this.pagoServices.eliminarPago(id);
         if (ok){
             return "Se eliminó el usuario con id " + id;
         }else{
