@@ -48,8 +48,13 @@ telefono.addEventListener('keyup', (e) => {
         // Eliminar letras
         .replace(/\D/g, '');
         });
+////////////////////////// aqui voy a editar--NEK
+//function capturaEnvio() {
+    const $formulario = document.getElementById('datosEnvio');
+    $formulario.addEventListener('submit', (e) => {
+    e.preventDefault();
 
-function capturaEnvio() {
+
     let nombreEn = document.getElementById('nombreEnvio').value;
     let apellidoEnvio = document.getElementById('apellidoEnvio').value;
     let estadoEnvio = document.getElementById('estado').value;
@@ -61,8 +66,45 @@ function capturaEnvio() {
     const datosEnvioArreglo = {nombre:nombreEn,apellido:apellidoEnvio, estado:estadoEnvio, direccion: direccionEnvio, colonia: coloniaEnvio,municipio: municipioEnvio, codigo: codigoPostalEnvio, telefono: telefonoEnvio}
     const jsonEnvio = JSON.stringify(datosEnvioArreglo);
     console.log(jsonEnvio);
-}
 
+    //if (nombreEn === "" && apellido === "" && estado === "" && direccion === "" && colonia === "" && municipio === "" && codigo === "" && telefono === "") return alert("Todos los espacios están vacíos"); 
+    
+    fetch('http://localhost:8080/usuarios',  {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            nombre: nombreEn,
+            apellido:apellidoEnvio,
+            estado:estadoEnvio,
+            direccion:direccionEnvio,
+            colonia:coloniaEnvio,
+            municipio:municipioEnvio,
+            codigo:municipioEnvio,
+           telefono:telefonoEnvio,
+           registro:{
+            id_registro:1
+           }
+        })
+
+    })
+
+    .then(resp => {
+        // if( resp.ok) {
+              
+        //       url = window.location;
+        //       const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1)
+        //       location.href = path +  'index.html';
+        // }
+    })
+    
+    .catch((error) => {
+        console.error('Error:', error);
+    }); 
+    })
+//};
+/////////////////////////////////Hasta aki------------nek
 function capturaPago() {
     let numTarjeta = document.getElementById('inputNumero').value;
     let nombreTarjeta =document.getElementById('inputNombre').value;
