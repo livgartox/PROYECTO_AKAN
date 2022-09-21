@@ -21,8 +21,6 @@ import com.akan2.Services.RegistroServices;
 
 
 
-
-
 @RestController
 @RequestMapping("/registro")
 @CrossOrigin(origins = "*", methods = { RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE,

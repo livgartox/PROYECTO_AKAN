@@ -39,6 +39,8 @@ formulario.addEventListener('submit', (e) => {
       );
       document.getElementById("palabraSecreta2").focus();
       //return false;
+    } else if (contra1 != contra2){ //para que las contraseñas sean iguales
+      alert("La contraseñas deben ser iguales")
     } else if (date == "") {
       //alert('Ingrese Fecha de Nacimiento');
       document.getElementById("fecha").focus();
@@ -59,4 +61,35 @@ formulario.addEventListener('submit', (e) => {
       
     }
       e.preventDefault();
+/* CONEXIÓN CON LA API */
+
+      fetch('http://localhost:8080/registro',  {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            nombre: nombre,
+            correo: correoE,      
+            password: contra1,
+            fechaNacimiento: date,
+            
+        }),
+      })
+
+        .then(resp => {
+            if( resp.ok) {
+                  
+                  url = window.location;
+                  const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1)
+                  location.href = path +  'index.html';
+            }
+        })
+        
+        .catch((error) => {
+            console.error('Error:', error);
+        }); 
+
+
+
 });
