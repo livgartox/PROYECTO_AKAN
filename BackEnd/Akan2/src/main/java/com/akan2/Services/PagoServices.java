@@ -17,11 +17,11 @@ public class PagoServices {
 	@Autowired
 	PagoRepositories pagorepositories;
 	
-	public ArrayList<PagoModel> obtenerUsuarios(){
+	public ArrayList<PagoModel> obtenerPago(){
 		return (ArrayList<PagoModel>)pagorepositories.findAll();
 		
 	}
-	public PagoModel guardarUsuario(PagoModel usuario){
+	public PagoModel guardarPago(PagoModel usuario){
         return pagorepositories.save(usuario);
     }
 	
@@ -29,7 +29,7 @@ public class PagoServices {
         return pagorepositories.findById(id);
     }
 	
-	public boolean eliminarUsuario(Long id) {
+	public boolean eliminarPago(Long id) {
         try{
         	pagorepositories.deleteById(id);
             return true;

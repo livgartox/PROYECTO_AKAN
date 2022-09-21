@@ -16,11 +16,11 @@ public class DetalleDePedidosServices {
 	@Autowired
 	DetalleDePedidosRepositories detalledepedidorepositories;
 	
-	public ArrayList<DetalleDePedidoModels> obtenerUsuarios(){
+	public ArrayList<DetalleDePedidoModels> obtenerDetalleDepedido(){
 		return (ArrayList<DetalleDePedidoModels>)detalledepedidorepositories.findAll();
 		
 	}
-	public DetalleDePedidoModels guardarUsuario(DetalleDePedidoModels usuario){
+	public DetalleDePedidoModels guardarDetalleDepedido(DetalleDePedidoModels usuario){
         return detalledepedidorepositories.save(usuario);
     }
 	
@@ -28,7 +28,7 @@ public class DetalleDePedidosServices {
         return detalledepedidorepositories.findById(id);
     }
 	
-	public boolean eliminarUsuario(Long id) {
+	public boolean eliminarDetalledepedido(Long id) {
         try{
         	detalledepedidorepositories.deleteById(id);
             return true;

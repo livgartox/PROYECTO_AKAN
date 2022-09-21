@@ -28,20 +28,20 @@ public class DetalleDePedidoControllers {
 	@Autowired
 	DetalleDePedidosServices detalledepedidoServices;
 	@GetMapping()
-	public ArrayList<DetalleDePedidoModels> obtenerUsuarios(){
-	        return detalledepedidoServices.obtenerUsuarios();
+	public ArrayList<DetalleDePedidoModels> obtenerDetalleDepedido(){
+	        return detalledepedidoServices.obtenerDetalleDepedido();
 	}
 	@PostMapping()
-	public DetalleDePedidoModels guardarUsuario(@RequestBody DetalleDePedidoModels usuario){
-        return this.detalledepedidoServices.guardarUsuario(usuario);
+	public DetalleDePedidoModels guardarDetalleDepedido(@RequestBody DetalleDePedidoModels usuario){
+        return this.detalledepedidoServices.guardarDetalleDepedido(usuario);
     }
 	@GetMapping( path = "/{id}")
-	public Optional<DetalleDePedidoModels> obtenerUsuarioPorId(@PathVariable("id") Long id) {
+	public Optional<DetalleDePedidoModels> obtenerPagoPorId(@PathVariable("id") Long id) {
         return this.detalledepedidoServices.obtenerPorId(id);
     }
 	@DeleteMapping( path = "/{id}")
 	public String eliminarPorId(@PathVariable("id") Long id){
-        boolean ok = this.detalledepedidoServices.eliminarUsuario(id);
+        boolean ok = this.detalledepedidoServices.eliminarDetalledepedido(id);
         if (ok){
             return "Se eliminó el usuario con id " + id;
         }else{
