@@ -66,7 +66,8 @@ telefono.addEventListener('keyup', (e) => {
     const datosEnvioArreglo = {nombre:nombreEn,apellido:apellidoEnvio, estado:estadoEnvio, direccion: direccionEnvio, colonia: coloniaEnvio,municipio: municipioEnvio, codigo: codigoPostalEnvio, telefono: telefonoEnvio}
     const jsonEnvio = JSON.stringify(datosEnvioArreglo);
     console.log(jsonEnvio);
-
+    console.log(localStorage.getItem('id_registro'));
+    
     //if (nombreEn === "" && apellido === "" && estado === "" && direccion === "" && colonia === "" && municipio === "" && codigo === "" && telefono === "") return alert("Todos los espacios están vacíos"); 
     
     fetch('http://localhost:8080/usuarios',  {
@@ -75,7 +76,7 @@ telefono.addEventListener('keyup', (e) => {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            nombre: nombreEn,
+            nombre_usuario: nombreEn,
             apellido:apellidoEnvio,
             estado:estadoEnvio,
             direccion:direccionEnvio,
@@ -84,7 +85,7 @@ telefono.addEventListener('keyup', (e) => {
             codigo:municipioEnvio,
            telefono:telefonoEnvio,
            registro:{
-            id_registro:1
+            id_registro:localStorage.getItem('id_registro')
            }
         })
 
@@ -115,6 +116,26 @@ function capturaPago() {
     console.log(capturaPagoArreglo);
     const jsonPago = JSON.stringify(capturaEnvio);
     console.log(jsonPago);
+
+    /* ESTO es para enlazar el formulario de pago al aPI */
+    fetch('http://localhost:8080/metodopago',  {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            ccv: codSeguridad,
+            mes_tarjeta:mes,
+            num_tarjeta:numTarjeta,
+            tipo_pago:direccionEnvio,
+            year_tarjeta:year,
+            
+           registro:{
+            id_registro:1
+           }
+        })
+
+    }) //Aquí acaba el fetch de la api
 }
 
 // VENTANA MODAL

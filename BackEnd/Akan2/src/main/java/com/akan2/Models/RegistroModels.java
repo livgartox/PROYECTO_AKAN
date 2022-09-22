@@ -1,5 +1,6 @@
 package com.akan2.Models;
 
+import java.util.Date;
 import java.util.List;
 
 import javax.persistence.Column;
@@ -9,6 +10,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.persistence.OneToMany;
 import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
 
 
 
@@ -29,10 +32,13 @@ public class RegistroModels {
 	
 	@Column(nullable = false)
     private String password;
+	
 	//relacion con usuario models
 	@OneToMany( mappedBy = "registro")
 	private  List<UsuarioModel> id_registro2;
 	
+	 
+	//@Temporal(TemporalType.DATE)
 	private String fecha_nacimiento;
 	
 	

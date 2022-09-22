@@ -17,12 +17,6 @@ import org.springframework.web.bind.annotation.RestController;
 import com.akan2.Models.RegistroModels;
 import com.akan2.Services.RegistroServices;
 
-
-<<<<<<< HEAD
-
-
-=======
->>>>>>> 6b61d9f2c8d7f30ed063f117ed670aba0dc5cade
 @RestController
 @RequestMapping("/registro")
 @CrossOrigin(origins = "*", methods = { RequestMethod.GET, RequestMethod.POST, RequestMethod.DELETE,

@@ -6,9 +6,13 @@ formulario.addEventListener('submit', (e) => {
     let correoE = document.getElementById("correo").value;
     let contra1 = document.getElementById("palabraSecreta1").value;
     let contra2 = document.getElementById("palabraSecreta2").value;
-    let date = document.getElementById("fecha").value;
+   let date = document.getElementById("fecha").value;
     const expresionCorreo = /\w+@\w+\.+[a-z]/;
     const expresionPass = /^.{4,12}$/;
+
+
+
+
     if (nombre == "") {
       //alert('Ingrese Nombre');
       document.getElementById("name").focus();
@@ -42,7 +46,7 @@ formulario.addEventListener('submit', (e) => {
     } else if (contra1 != contra2){ //para que las contraseñas sean iguales
       alert("La contraseñas deben ser iguales")
     } else if (date == "") {
-      //alert('Ingrese Fecha de Nacimiento');
+      alert('Ingrese Fecha de Nacimiento');
       document.getElementById("fecha").focus();
     } else {
       console.log(
@@ -61,7 +65,7 @@ formulario.addEventListener('submit', (e) => {
       
     }
       e.preventDefault();
-/* CONEXIÓN CON LA API */
+/***********************************CONEXIÓN CON LA API */
 
       fetch('http://localhost:8080/registro',  {
         method: 'POST',
@@ -69,27 +73,48 @@ formulario.addEventListener('submit', (e) => {
             'Content-Type': 'application/json'
         },
         body: JSON.stringify({
-            nombre: nombre,
-            correo: correoE,      
+            nombre_usuario: nombre,
+            email: correoE,      
             password: contra1,
-            fechaNacimiento: date,
+            fecha_Nacimiento: date,
             
         }),
       })
+          //Para guardar el id_registro:
+      .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+          
+            localStorage.setItem('id_registro',data.id_registro); //para guardar el id_registro en el LocalStorage
 
-        .then(resp => {
+           
+
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+
+            
+        });
+
+          /* .then(resp => {
             if( resp.ok) {
                   
                   url = window.location;
                   const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1)
-                  location.href = path +  'index.html';
+                  location.href = path +  'pago.html';
             }
-        })
+        })  */
         
-        .catch((error) => {
+        /* .catch((error) => {
             console.error('Error:', error);
-        }); 
-
-
+        });  */
 
 });
+// ************ LOCAL STORAGE
+
+/* localStorage.setItem(registroJson);
+if (localStorage.getItem('registroJson')){
+  registroJson=JSON.parse(localStorage.getItem('registroJson'))
+  console.log("exp",registroJson);
+} */
+
