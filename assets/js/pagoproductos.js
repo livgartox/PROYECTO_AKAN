@@ -48,9 +48,8 @@ const pintarFooter=()=>{
     footer.appendChild(fragment)
     
     //Vaciar despues de que paga
-    const btnFinalizarCompra=document.getElementById('btn-terminar')
+    const btnFinalizarCompra=document.getElementById('btnabrir')
     btnFinalizarCompra.addEventListener('click',()=>{
-        alert("Estamos validando su información")
         carrito={}
         pintarCarrito()
     })
@@ -65,3 +64,46 @@ document.addEventListener('DOMContentLoaded',()=>{
         pintarCarrito()
     }
 })
+
+
+//Para enlazar con el backend---------------------------
+//Como se ve, solo queda fuera el último
+//console.log("uno",subobj);
+const boton = document.getElementById('btnabrir');
+//para que solo cuando oprima el botón se genere todo
+
+
+
+boton.addEventListener('click',e=>{
+    console.log("hola");
+
+    for (const property in carrito) {
+        subobj=carrito[property]
+        jason=JSON.stringify({
+            precio_por_unidades: subobj.precio,
+            unidades: subobj.cantidad,
+        })
+        console.log("soy el json ",jason);
+    
+    
+
+    fetch('http://localhost:8080/detalledepedido', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({
+            precio_por_unidades: subobj.precio,
+            unidades: subobj.cantidad,
+            id_cliente: {"id_cliente":2}
+        }),
+    })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+        });
+    }
+});
