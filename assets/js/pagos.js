@@ -106,39 +106,56 @@ telefono.addEventListener('keyup', (e) => {
     })
 //};
 /////////////////////////////////Hasta aki------------nek
-function capturaPago() {
+//////////////////Oscar //////////
+const $formulario1 = document.getElementById('formulario');
+$formulario1.addEventListener('submit',(e) =>{
+    e.preventDefault();
+
     let numTarjeta = document.getElementById('inputNumero').value;
     let nombreTarjeta =document.getElementById('inputNombre').value;
     let mes = document.getElementById('selectMes').value;
     let year = document.getElementById('selectYear').value;
     let codSeguridad = document.getElementById('inputCCV').value;
-    const capturaPagoArreglo = {numeroT:numTarjeta,nombreT:nombreTarjeta,mes:mes, year:year,ccv:codSeguridad}
-    console.log(capturaPagoArreglo);
-    const jsonPago = JSON.stringify(capturaEnvio);
+    /*const capturaPagoArreglo = {
+            numTarjeta:numTarjeta,
+            nom_pago:nombreTarjeta,
+            mesTarjeta:mes, 
+            yearTarjeta:year,
+            ccv:codSeguridad}
+            console.log(capturaPagoArreglo.nom_pago);*/
+
+    const jsonPago = JSON.stringify(capturaPagoArreglo);
     console.log(jsonPago);
 
-    /* ESTO es para enlazar el formulario de pago al aPI */
-    fetch('http://localhost:8080/metodopago',  {
+    fetch('http://localhost:8080/metodopago',{
         method: 'POST',
-        headers: {
+        headers:{
             'Content-Type': 'application/json'
         },
-        body: JSON.stringify({
-            ccv: codSeguridad,
-            mes_tarjeta:mes,
-            num_tarjeta:numTarjeta,
-            tipo_pago:direccionEnvio,
-            year_tarjeta:year,
-            
-           registro:{
-            id_registro:1
-           }
+            body: JSON.stringify({
+            numTarjeta:numTarjeta,
+            nom_pago:nombreTarjeta,
+            mesTarjeta:mes, 
+            yearTarjeta:year,
+            ccv:codSeguridad,
+            id_pedido:{
+                id_pedido:1
+            }
         })
+    })
 
-    }) //Aquí acaba el fetch de la api
+    .then(resp => {
 
-    
-}
+    })
+
+    .catch((error)=> {
+        console.error('Error:', error);
+    });
+
+
+    })
+
+/////////Termina Oscar /////////////////
 
 // VENTANA MODAL
 document.getElementById("btnabrir").addEventListener ("click",function(){
