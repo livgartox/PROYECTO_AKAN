@@ -136,6 +136,8 @@ function capturaPago() {
         })
 
     }) //Aquí acaba el fetch de la api
+
+    
 }
 
 // VENTANA MODAL

@@ -66,17 +66,14 @@ document.addEventListener('DOMContentLoaded',()=>{
 })
 
 
-//Para enlazar con el backend---------------------------
-//Como se ve, solo queda fuera el último
-//console.log("uno",subobj);
+//-------------------Para enlazar con el backend---------------------------
 const boton = document.getElementById('btnabrir');
+
 //para que solo cuando oprima el botón se genere todo
-
-
-
 boton.addEventListener('click',e=>{
-    console.log("hola");
-
+    e.preventDefault();
+    //como es más de un registro:
+    idsNuevosElementos=[]
     for (const property in carrito) {
         subobj=carrito[property]
         jason=JSON.stringify({
@@ -85,25 +82,47 @@ boton.addEventListener('click',e=>{
         })
         console.log("soy el json ",jason);
     
-    
-
-    fetch('http://localhost:8080/detalledepedido', {
-        method: 'POST',
-        headers: {
-            'Content-Type': 'application/json'
-        },
-        body: JSON.stringify({
-            precio_por_unidades: subobj.precio,
-            unidades: subobj.cantidad,
-            id_cliente: {"id_cliente":2}
-        }),
-    })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Success:', data);
+        fetch('http://localhost:8080/detalledepedido', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify({
+                precio_por_unidades: subobj.precio,
+                unidades: subobj.cantidad,
+                id_cliente: {"id_cliente":2}
+            }),
         })
-        .catch((error) => {
-            console.error('Error:', error);
-        });
+            .then(response => response.json())
+            .then(data => {
+                console.log('Success:', data);
+/*              Verificar si lo siguiente me aporta algo   
+                idsNuevosElementos.push(data.id_pedido)
+                //aquí ya estamos guardando todo en el local Storage
+                localStorage.setItem('id',idsNuevosElementos) */
+
+
+                "Para que se rellene aquí la otra tabla"
+                fetch('http://localhost:8080/productosypedidos', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify({
+                        id_producto: {
+                            "id_producto":1
+                        },
+                        id_pedido: {
+                            "id_pedido":data.id_pedido
+                        }
+                    }),
+                })
+
+            })
+            .catch((error) => {
+                console.error('Error:', error);
+            });
     }
 });
+//console.log("arreglodebe",localStorage.getItem('id'));
+//La tabla de productos y pedidos se debe rellenar aquí
