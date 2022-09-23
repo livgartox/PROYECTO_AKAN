@@ -86,7 +86,7 @@ formulario.addEventListener('submit', (e) => {
             console.log('Success:', data);
           
             localStorage.setItem('id_registro',data.id_registro); //para guardar el id_registro en el LocalStorage
-            window.location.replace("Login.html");
+            window.location.replace("LogIn.html");
 
            
 
