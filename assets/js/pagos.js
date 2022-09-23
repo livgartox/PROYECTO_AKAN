@@ -116,13 +116,13 @@ $formulario1.addEventListener('submit',(e) =>{
     let mes = document.getElementById('selectMes').value;
     let year = document.getElementById('selectYear').value;
     let codSeguridad = document.getElementById('inputCCV').value;
-    /*const capturaPagoArreglo = {
+    const capturaPagoArreglo = {
             numTarjeta:numTarjeta,
             nom_pago:nombreTarjeta,
             mesTarjeta:mes, 
             yearTarjeta:year,
             ccv:codSeguridad}
-            console.log(capturaPagoArreglo.nom_pago);*/
+            console.log(capturaPagoArreglo.nom_pago);
 
     const jsonPago = JSON.stringify(capturaPagoArreglo);
     console.log(jsonPago);
@@ -134,7 +134,7 @@ $formulario1.addEventListener('submit',(e) =>{
         },
             body: JSON.stringify({
             numTarjeta:numTarjeta,
-            nom_pago:nombreTarjeta,
+            nombreUsuarioTarjeta:nombreTarjeta,
             mesTarjeta:mes, 
             yearTarjeta:year,
             ccv:codSeguridad,

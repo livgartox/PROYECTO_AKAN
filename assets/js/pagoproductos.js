@@ -110,7 +110,7 @@ boton.addEventListener('click',e=>{
                     },
                     body: JSON.stringify({
                         id_producto: {
-                            "id_producto":1
+                            "id_producto":2
                         },
                         id_pedido: {
                             "id_pedido":data.id_pedido
