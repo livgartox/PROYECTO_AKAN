@@ -67,7 +67,7 @@ formulario.addEventListener('submit', (e) => {
       e.preventDefault();
 /***********************************CONEXIÓN CON LA API */
 
-      fetch('http://localhost:8080/registro',  {
+      fetch('https://akan-un-lugar-para-el-arte-1.herokuapp.com/registro',  {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'

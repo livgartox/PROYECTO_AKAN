@@ -85,7 +85,7 @@ boton.addEventListener('click',e=>{
         localStorage.setItem('id_producto',subobj.id)
         
     
-        fetch('http://localhost:8080/detalledepedido', {
+        fetch('https://akan-un-lugar-para-el-arte-1.herokuapp.com/detalledepedido', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
@@ -104,7 +104,7 @@ boton.addEventListener('click',e=>{
                 console.log('Success:', data);
                 id_producto=subobj.id
                 //"Para que se rellene aquí la otra tabla"
-                fetch('http://localhost:8080/productosypedidos', {
+                fetch('https://akan-un-lugar-para-el-arte-1.herokuapp.com/productosypedidos', {
                     method: 'POST',
                     headers: {
                         'Content-Type': 'application/json'
@@ -128,7 +128,7 @@ boton.addEventListener('click',e=>{
             
 
                 //Para pago
-                fetch('http://localhost:8080/metodopago',{
+                fetch('https://akan-un-lugar-para-el-arte-1.herokuapp.com/metodopago',{
                 method: 'POST',
                 headers:{
                     'Content-Type': 'application/json'

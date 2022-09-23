@@ -70,7 +70,7 @@ telefono.addEventListener('keyup', (e) => {
     
     //if (nombreEn === "" && apellido === "" && estado === "" && direccion === "" && colonia === "" && municipio === "" && codigo === "" && telefono === "") return alert("Todos los espacios están vacíos"); 
     
-    fetch('http://localhost:8080/usuarios',  {
+    fetch('https://akan-un-lugar-para-el-arte-1.herokuapp.com/usuarios',  {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
