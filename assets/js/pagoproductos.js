@@ -78,10 +78,12 @@ boton.addEventListener('click',e=>{
         subobj=carrito[property]
         jason=JSON.stringify({
             precio_por_unidades: subobj.precio,
-            unidades: subobj.cantidad,
-            idProducto: subobj.id
+            unidades: subobj.cantidad
+            /* idProducto: subobj.id */
         })
         console.log("soy el json ",jason);
+        localStorage.setItem('id_producto',subobj.id)
+        
     
         fetch('http://localhost:8080/detalledepedido', {
             method: 'POST',
@@ -96,9 +98,11 @@ boton.addEventListener('click',e=>{
             }
             }),
         })
+
             .then(response => response.json())
             .then(data => {
                 console.log('Success:', data);
+                id_producto=subobj.id
                 //"Para que se rellene aquí la otra tabla"
                 fetch('http://localhost:8080/productosypedidos', {
                     method: 'POST',
@@ -107,7 +111,7 @@ boton.addEventListener('click',e=>{
                     },
                     body: JSON.stringify({
                         id_producto: {
-                            "id_producto":subobj.id
+                            "id_producto":id_producto
                         },
                         id_pedido: {
                             "id_pedido":data.id_pedido
