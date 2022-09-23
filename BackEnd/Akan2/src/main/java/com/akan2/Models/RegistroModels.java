@@ -28,6 +28,7 @@ public class RegistroModels {
 	
 	private String nombre_usuario;
 	
+	@Column(nullable = false)
 	private String email;
 	
 	@Column(nullable = false)
