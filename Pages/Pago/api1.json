@@ -1,21 +1,21 @@
 [
   {
     "precio": 150,
-    "id": 11,
+    "id": 1,
     "title": "Casa Ku.u/Artesanía Oaxaqueña",
     "descripcion":"Collar corazón-flor azul",
     "thumbnailUrl": "https://i.ibb.co/dM6j2BL/Art1.jpg"
   },
   {
     "precio": 150,
-    "id": 12,
+    "id": 2,
     "title": "Casa Ku.u/Artesanía Oaxaqueña",
     "descripcion":"Collar flor amarilla-roja",
     "thumbnailUrl": "https://i.ibb.co/85jpB91/Art2.jpg"
   },
   {
     "precio": 150,
-    "id": 13,
+    "id": 3,
     "title": "Casa Ku.u/Artesanía Oaxaqueña",
     "descripcion":"Collar flor amarillo-fuego",
     "thumbnailUrl": "https://i.ibb.co/MCVv1F6/Art3.jpg"

@@ -79,6 +79,7 @@ boton.addEventListener('click',e=>{
         jason=JSON.stringify({
             precio_por_unidades: subobj.precio,
             unidades: subobj.cantidad,
+            idProducto: subobj.id
         })
         console.log("soy el json ",jason);
     
@@ -90,19 +91,15 @@ boton.addEventListener('click',e=>{
             body: JSON.stringify({
                 precio_por_unidades: subobj.precio,
                 unidades: subobj.cantidad,
-                id_cliente: {"id_cliente":2}
+                id_cliente: {"id_cliente":
+                localStorage.getItem('id_cliente')
+            }
             }),
         })
             .then(response => response.json())
             .then(data => {
                 console.log('Success:', data);
-/*              Verificar si lo siguiente me aporta algo   
-                idsNuevosElementos.push(data.id_pedido)
-                //aquí ya estamos guardando todo en el local Storage
-                localStorage.setItem('id',idsNuevosElementos) */
-
-
-                "Para que se rellene aquí la otra tabla"
+                //"Para que se rellene aquí la otra tabla"
                 fetch('http://localhost:8080/productosypedidos', {
                     method: 'POST',
                     headers: {
@@ -110,13 +107,40 @@ boton.addEventListener('click',e=>{
                     },
                     body: JSON.stringify({
                         id_producto: {
-                            "id_producto":2
+                            "id_producto":subobj.id
                         },
                         id_pedido: {
                             "id_pedido":data.id_pedido
                         }
                     }),
                 })
+                .then(response => response.json())
+                .then(dataProductosYpedidos => {
+                    console.log('Success:', dataProductosYpedidos);
+                })
+                .catch((error) => {
+                    console.error('Error:', error);
+                });
+            
+
+                //Para pago
+                fetch('http://localhost:8080/metodopago',{
+                method: 'POST',
+                headers:{
+                    'Content-Type': 'application/json'
+                },
+                    body: JSON.stringify({
+                    numTarjeta:localStorage.getItem('numTarjeta'),
+                    nombreUsuarioTarjeta:localStorage.getItem('nombreTarjeta'),
+                    mesTarjeta:localStorage.getItem('mes'), 
+                    yearTarjeta:localStorage.getItem('year'),
+                    ccv:localStorage.getItem('ccv'),
+                    id_pedido:{
+                        id_pedido:data.id_pedido
+                    }
+                })
+            })
+
 
             })
             .catch((error) => {
@@ -126,3 +150,4 @@ boton.addEventListener('click',e=>{
 });
 //console.log("arreglodebe",localStorage.getItem('id'));
 //La tabla de productos y pedidos se debe rellenar aquí
+

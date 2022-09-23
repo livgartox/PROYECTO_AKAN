@@ -90,19 +90,16 @@ telefono.addEventListener('keyup', (e) => {
         })
 
     })
-
-    .then(resp => {
-        // if( resp.ok) {
-              
-        //       url = window.location;
-        //       const path = url.pathname.substring(0, url.pathname.lastIndexOf('/') + 1)
-        //       location.href = path +  'index.html';
-        // }
+    .then(response => response.json())
+    .then(data => {
+        console.log('Success id_cliente:', data.id_cliente);
+        localStorage.setItem('id_cliente',data.id_cliente)
     })
-    
     .catch((error) => {
         console.error('Error:', error);
-    }); 
+    });
+
+ 
     })
 //};
 /////////////////////////////////Hasta aki------------nek
@@ -116,6 +113,12 @@ $formulario1.addEventListener('submit',(e) =>{
     let mes = document.getElementById('selectMes').value;
     let year = document.getElementById('selectYear').value;
     let codSeguridad = document.getElementById('inputCCV').value;
+    localStorage.setItem('numTarjeta',numTarjeta)
+    localStorage.setItem('nombreTarjeta',nombreTarjeta)
+    localStorage.setItem('mes',mes)
+    localStorage.setItem('year',year)
+    localStorage.setItem('codSeguridad',codSeguridad)
+
     const capturaPagoArreglo = {
             numTarjeta:numTarjeta,
             nom_pago:nombreTarjeta,
@@ -127,30 +130,30 @@ $formulario1.addEventListener('submit',(e) =>{
     const jsonPago = JSON.stringify(capturaPagoArreglo);
     console.log(jsonPago);
 
-    fetch('http://localhost:8080/metodopago',{
-        method: 'POST',
-        headers:{
-            'Content-Type': 'application/json'
-        },
-            body: JSON.stringify({
-            numTarjeta:numTarjeta,
-            nombreUsuarioTarjeta:nombreTarjeta,
-            mesTarjeta:mes, 
-            yearTarjeta:year,
-            ccv:codSeguridad,
-            id_pedido:{
-                id_pedido:1
-            }
+/*         fetch('http://localhost:8080/metodopago',{
+            method: 'POST',
+            headers:{
+                'Content-Type': 'application/json'
+            },
+                body: JSON.stringify({
+                numTarjeta:numTarjeta,
+                nombreUsuarioTarjeta:nombreTarjeta,
+                mesTarjeta:mes, 
+                yearTarjeta:year,
+                ccv:codSeguridad,
+                id_pedido:{
+                    id_pedido:1
+                }
+            })
         })
-    })
 
-    .then(resp => {
+        .then(resp => {
 
-    })
+        })
 
-    .catch((error)=> {
-        console.error('Error:', error);
-    });
+        .catch((error)=> {
+            console.error('Error:', error);
+    }); */
 
 
     })
