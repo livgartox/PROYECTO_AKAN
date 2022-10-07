@@ -50,7 +50,7 @@ public class UsuarioModel {
 
 	/*public String getPassword() {
 		return password;
-	}
+	}e
 
 	public void setPassword(String password) {
 		this.password = password;
